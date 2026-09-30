@@ -104,7 +104,7 @@ class MainActivity : Activity() {
         val sw = Switch(this).apply { text = title; textSize = 17f; isChecked = false }
         val value = text("$default$unit", 14, Color.DKGRAY, Typeface.BOLD)
         val seek = SeekBar(this).apply {
-            max = max - min
+            this.max = max - min
             progress = default - min
             isEnabled = false
             setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {

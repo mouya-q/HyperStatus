@@ -1,12 +1,22 @@
 # HyperStatus
-Minimal root-assisted status bar tuning for Xiaomi 10 / HyperOS 4 ports.
 
-**Safety-first starter:** this repository builds an Android APK with a compatibility report UI and read-only root diagnostics. It does not install overlays, patch framework files, hook SystemUI, or touch `hyperos.rustruntime.*`. Actual tuning is deliberately gated until the ROM's overlayable resources and behavior are verified.
+A minimal root-assisted status-bar tuner inspired by the relevant Iconify features, tailored for Xiaomi 10 / HyperOS 4 ports.
 
-## Why not ship automatic changes yet?
-Resource names and overlay policies vary by ROM/port. Blindly changing status bar dimensions can cause SystemUI layout failures. First install the APK, grant root when prompted by the diagnostics screen, and collect the report. Use that report to implement only confirmed resources.
+## Included
+- Notch Bar Killer (framework Cutout resources)
+- Status bar height
+- Status bar start padding
+- Status bar end padding
+- Read-only compatibility scan
+- One-tap restore that disables/uninstalls only HyperStatus overlays
 
-## Project
-- `app`: Kotlin Android app, Material-style restrained UI
-- `RootDiagnostics`: read-only `getprop`, overlay list and resource-file discovery
-- No LSPosed dependency, no Xposed hooks, no runtime-library modification
+## Safety model
+The runtime engine has a hard allow-list for only `android` and `com.android.systemui`. It does not use LSPosed/Xposed, does not write or delete framework files, and contains an explicit resource-name guard against `rustruntime`.
+
+This is intentionally not an absolute guarantee: OEM resource implementations differ, and a bad overlay can still affect SystemUI. Apply one setting at a time and keep the restore button available.
+
+## Build
+Push the repo to GitHub. The included workflow builds a debug APK with JDK 17.
+
+### Device requirement
+The included AAPT2 binary is arm64-v8a, matching Xiaomi 10. Other architectures need their own AAPT2 binary.

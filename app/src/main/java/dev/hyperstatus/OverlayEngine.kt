@@ -171,7 +171,7 @@ object OverlayEngine {
             if (target.isNotBlank()) for (p in target.split(Regex("\\s+"))) append(" -I '$p'")
         }
         val targetApks = if (spec.target == SYSTEM_UI) target.split(Regex("\\s+")).filter { it.isNotBlank() } else listOf(framework)
-        val missing = spec.entries.filterNot { entryExists(targetApks, entry = entryName(entry.first)) }
+        val missing = spec.entries.filterNot { e -> entryExists(targetApks, entry = entryName(e.first)) }
         if (missing.isNotEmpty()) {
             return Built(false, "ROM 未提供这些资源，已阻止修改：\n" + missing.joinToString("\n") { "- ${it.first}" }, null, spec.packageName)
         }

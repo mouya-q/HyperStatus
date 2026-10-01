@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "dev.hyperstatus"
-    compileSdk = 35
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "dev.hyperstatus"

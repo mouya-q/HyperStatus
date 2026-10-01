@@ -1,9 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:theme="@style/AppTheme"
-        android:label="HyperStatus"
         android:allowBackup="false"
-        android:supportsRtl="true">
+        android:icon="@mipmap/ic_launcher"
+        android:label="HyperStatus"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HyperStatus">
         <activity
             android:name=".MainActivity"
             android:exported="true">

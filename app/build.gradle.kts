@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
@@ -10,22 +10,25 @@ android {
     defaultConfig {
         applicationId = "dev.hyperstatus"
         minSdk = 26
-        targetSdk = 28
-        versionCode = 2
-        versionName = "0.2.0"
+        targetSdk = 35
+        versionCode = 3
+        versionName = "0.3.0-miuix"
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
+    kotlin {
+        compilerOptions {
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
+        }
     }
 
     buildFeatures {
         buildConfig = true
+        compose = true
     }
 
     packaging {
@@ -34,5 +37,11 @@ android {
 }
 
 dependencies {
+    implementation("top.yukonga.miuix.kmp:miuix-ui-android:0.9.4")
+    implementation("top.yukonga.miuix.kmp:miuix-preference-android:0.9.4")
+    implementation("org.jetbrains.compose.ui:ui-android:1.12.0")
+    implementation("org.jetbrains.compose.runtime:runtime-android:1.12.0")
+    implementation("org.jetbrains.compose.foundation:foundation-android:1.12.0")
+    implementation("androidx.activity:activity:1.12.0")
     implementation("com.android.tools.build:apksig:8.7.3")
 }

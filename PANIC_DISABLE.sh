@@ -1,9 +1,12 @@
 #!/system/bin/sh
-# Run as root on the device if you ever need an emergency rollback.
-cmd overlay disable --user 0 dev.hyperstatus.overlay.systemui 2>/dev/null || true
-cmd overlay disable --user 0 dev.hyperstatus.overlay.framework 2>/dev/null || true
-pm uninstall dev.hyperstatus.overlay.systemui 2>/dev/null || true
-pm uninstall dev.hyperstatus.overlay.framework 2>/dev/null || true
-am force-stop com.android.systemui 2>/dev/null || true
-rm -rf /data/local/tmp/hyperstatus /data/local/tmp/hyperstatus_aapt2 2>/dev/null || true
-echo "HyperStatus overlays disabled/removed."
+# HyperStatus Lite emergency disable. Only touches HyperStatus Lite overlays/module files.
+set -u
+PKGS="dev.hyperstatus.iconifylite.systemui dev.hyperstatus.iconifylite.framework"
+for p in $PKGS; do
+  cmd overlay disable --user 0 "$p" >/dev/null 2>&1 || true
+done
+rm -f /system/product/overlay/dev.hyperstatus.iconifylite.systemui.apk
+rm -f /system/product/overlay/dev.hyperstatus.iconifylite.framework.apk
+rm -f /data/adb/modules/HyperStatusLite/system/product/overlay/dev.hyperstatus.iconifylite.systemui.apk
+rm -f /data/adb/modules/HyperStatusLite/system/product/overlay/dev.hyperstatus.iconifylite.framework.apk
+killall com.android.systemui >/dev/null 2>&1 || true

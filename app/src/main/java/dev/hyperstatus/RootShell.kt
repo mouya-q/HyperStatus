@@ -4,24 +4,37 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.util.concurrent.TimeUnit
 
-data class ShellResult(val code: Int, val out: String, val err: String) {
-    val ok: Boolean get() = code == 0
-}
-
 object RootShell {
-    fun run(command: String, timeoutMs: Long = 30_000): ShellResult {
-        return try {
-            val p = ProcessBuilder("su", "-c", command).redirectErrorStream(true).start()
-            val output = BufferedReader(InputStreamReader(p.inputStream)).readText()
-            if (!p.waitFor(timeoutMs, TimeUnit.MILLISECONDS)) {
-                p.destroyForcibly()
-                return ShellResult(124, output, "timeout")
-            }
-            if (p.exitValue() == 0) ShellResult(0, output, "") else ShellResult(p.exitValue(), output, "")
-        } catch (e: Exception) {
-            ShellResult(-1, "", e.javaClass.simpleName + ": " + (e.message ?: ""))
-        }
+    fun available(): Boolean = run("id", 5_000).ok
+
+    fun run(vararg commands: String): ShellResult {
+        return run(commands.joinToString("\n"), 30_000)
     }
 
-    fun available(): Boolean = run("id").ok
+    fun run(command: String, timeoutMs: Long): ShellResult {
+        return try {
+            val p = ProcessBuilder("su", "-c", command)
+                .redirectErrorStream(true)
+                .start()
+
+            val output = StringBuilder()
+            val reader = Thread {
+                BufferedReader(InputStreamReader(p.inputStream)).useLines { lines ->
+                    lines.forEach { output.append(it).append('\n') }
+                }
+            }
+            reader.start()
+
+            if (!p.waitFor(timeoutMs, TimeUnit.MILLISECONDS)) {
+                p.destroyForcibly()
+                reader.join(500)
+                return ShellResult(124, output.toString(), "timeout after ${timeoutMs}ms")
+            }
+            reader.join(2_000)
+            val code = p.exitValue()
+            ShellResult(code, output.toString(), "")
+        } catch (e: Exception) {
+            ShellResult(-1, "", "${e.javaClass.simpleName}: ${e.message ?: ""}")
+        }
+    }
 }

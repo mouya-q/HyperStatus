@@ -1,1 +1,54 @@
-cGFja2FnZSBkZXYuaHlwZXJzdGF0dXMub3ZlcmxheQoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5Db250ZXh0CmltcG9ydCBhbmRyb2lkLm9zLkJ1aWxkCmltcG9ydCBkZXYuaHlwZXJzdGF0dXMuUm9vdFNoZWxsCmltcG9ydCBqYXZhLmlvLkJ1ZmZlcmVkT3V0cHV0U3RyZWFtCmltcG9ydCBqYXZhLmlvLkZpbGUKaW1wb3J0IGphdmEuaW8uRmlsZU91dHB1dFN0cmVhbQppbXBvcnQgamF2YS51dGlsLnppcC5aaXBJbnB1dFN0cmVhbQoKb2JqZWN0IFRvb2xJbnN0YWxsZXIgewogICAgcHJpdmF0ZSBjb25zdCB2YWwgQVNTRVQgPSAiVG9vbHMvam5pTGlicy56aXAiCgogICAgZnVuIGVuc3VyZShjb250ZXh0OiBDb250ZXh0KTogUGFpcjxGaWxlLCBGaWxlPiB7CiAgICAgICAgdmFsIGFiaSA9IEJ1aWxkLlNVUFBPUlRFRF9BQklTLmZpcnN0T3JOdWxsIHsgaXQgaW4gc2V0T2YoImFybTY0LXY4YSIsICJhcm1lYWJpLXY3YSIsICJ4ODZfNjQiLCAieDg2IikgfQogICAgICAgICAgICA/OiB0aHJvdyBJbGxlZ2FsU3RhdGVFeGNlcHRpb24oIuS4jeaUr+aMgeeahCBBQknvvJoke0J1aWxkLlNVUFBPUlRFRF9BQklTLmpvaW5Ub1N0cmluZygpfSIpCiAgICAgICAgdmFsIGRpciA9IEZpbGUoY29udGV4dC5maWxlc0RpciwgImh5cGVyc3RhdHVzL2Jpbi8kYWJpIikKICAgICAgICBkaXIubWtkaXJzKCkKICAgICAgICB2YWwgYWFwdDIgPSBGaWxlKGRpciwgImFhcHQyIikKICAgICAgICB2YWwgemlwYWxpZ24gPSBGaWxlKGRpciwgInppcGFsaWduIikKICAgICAgICBpZiAoYWFwdDIuaXNGaWxlICYmIHppcGFsaWduLmlzRmlsZSAmJiBhYXB0Mi5sZW5ndGgoKSA+IDEwMjQgKiAxMDI0ICYmIHppcGFsaWduLmxlbmd0aCgpID4gMTAyNCkgewogICAgICAgICAgICBSb290U2hlbGwucnVuKCJjaG1vZCA3NTUgJyR7YWFwdDIuYWJzb2x1dGVQYXRofScgJyR7emlwYWxpZ24uYWJzb2x1dGVQYXRofSciKQogICAgICAgICAgICByZXR1cm4gYWFwdDIgdG8gemlwYWxpZ24KICAgICAgICB9CgogICAgICAgIHZhbCB6aXAgPSBGaWxlKGNvbnRleHQuY2FjaGVEaXIsICJoeXBlcnN0YXR1cy1qbmlMaWJzLnppcCIpCiAgICAgICAgY29udGV4dC5hc3NldHMub3BlbihBU1NFVCkudXNlIHsgaW5wdXQgLT4KICAgICAgICAgICAgRmlsZU91dHB1dFN0cmVhbSh6aXApLnVzZSB7IG91dHB1dCAtPiBpbnB1dC5jb3B5VG8ob3V0cHV0KSB9CiAgICAgICAgfQogICAgICAgIFppcElucHV0U3RyZWFtKHppcC5pbnB1dFN0cmVhbSgpLmJ1ZmZlcmVkKCkpLnVzZSB7IHppcyAtPgogICAgICAgICAgICB2YXIgZW50cnkgPSB6aXMubmV4dEVudHJ5CiAgICAgICAgICAgIHdoaWxlIChlbnRyeSAhPSBudWxsKSB7CiAgICAgICAgICAgICAgICBpZiAoIWVudHJ5LmlzRGlyZWN0b3J5ICYmIGVudHJ5Lm5hbWUuc3RhcnRzV2l0aCgiJGFiaS8iKSkgewogICAgICAgICAgICAgICAgICAgIHZhbCBsZWFmID0gZW50cnkubmFtZS5zdWJzdHJpbmdBZnRlckxhc3QoJy8nKQogICAgICAgICAgICAgICAgICAgIGlmIChsZWFmID09ICJsaWJhYXB0Mi5zbyIgfHwgbGVhZiA9PSAibGliemlwYWxpZ24uc28iKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIHZhbCBvdXQgPSB3aGVuIChsZWFmKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAibGliYWFwdDIuc28iIC0+IGFhcHQyCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlIC0+IHppcGFsaWduCiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgQnVmZmVyZWRPdXRwdXRTdHJlYW0oRmlsZU91dHB1dFN0cmVhbShvdXQpKS51c2UgeyBib3MgLT4gemlzLmNvcHlUbyhib3MpIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB6aXMuY2xvc2VFbnRyeSgpCiAgICAgICAgICAgICAgICBlbnRyeSA9IHppcy5uZXh0RW50cnkKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICB6aXAuZGVsZXRlKCkKICAgICAgICBpZiAoIWFhcHQyLmlzRmlsZSB8fCAhemlwYWxpZ24uaXNGaWxlKSB7CiAgICAgICAgICAgIHRocm93IElsbGVnYWxTdGF0ZUV4Y2VwdGlvbigi5YaF572uIGpuaUxpYnMuemlwIOS4reayoeacieaJvuWIsCAkYWJpIOeahCBhYXB0Mi96aXBhbGlnbiIpCiAgICAgICAgfQogICAgICAgIFJvb3RTaGVsbC5ydW4oImNobW9kIDc1NSAnJHthYXB0Mi5hYnNvbHV0ZVBhdGh9JyAnJHt6aXBhbGlnbi5hYnNvbHV0ZVBhdGh9JyIpCiAgICAgICAgcmV0dXJuIGFhcHQyIHRvIHppcGFsaWduCiAgICB9Cn0=
+package dev.hyperstatus.overlay
+
+import android.content.Context
+import android.os.Build
+import dev.hyperstatus.RootShell
+import java.io.BufferedOutputStream
+import java.io.File
+import java.io.FileOutputStream
+import java.util.zip.ZipInputStream
+
+object ToolInstaller {
+    private const val ASSET = "Tools/jniLibs.zip"
+
+    fun ensure(context: Context): Pair<File, File> {
+        val abi = Build.SUPPORTED_ABIS.firstOrNull { it in setOf("arm64-v8a", "armeabi-v7a", "x86_64", "x86") }
+            ?: throw IllegalStateException("不支持的 ABI：${Build.SUPPORTED_ABIS.joinToString()}")
+        val dir = File(context.filesDir, "hyperstatus/bin/$abi")
+        dir.mkdirs()
+        val aapt2 = File(dir, "aapt2")
+        val zipalign = File(dir, "zipalign")
+        if (aapt2.isFile && zipalign.isFile && aapt2.length() > 1024 * 1024 && zipalign.length() > 1024) {
+            RootShell.run("chmod 755 '${aapt2.absolutePath}' '${zipalign.absolutePath}'")
+            return aapt2 to zipalign
+        }
+
+        val zip = File(context.cacheDir, "hyperstatus-jniLibs.zip")
+        context.assets.open(ASSET).use { input ->
+            FileOutputStream(zip).use { output -> input.copyTo(output) }
+        }
+        ZipInputStream(zip.inputStream().buffered()).use { zis ->
+            var entry = zis.nextEntry
+            while (entry != null) {
+                if (!entry.isDirectory && entry.name.startsWith("$abi/")) {
+                    val leaf = entry.name.substringAfterLast('/')
+                    if (leaf == "libaapt2.so" || leaf == "libzipalign.so") {
+                        val out = when (leaf) {
+                            "libaapt2.so" -> aapt2
+                            else -> zipalign
+                        }
+                        BufferedOutputStream(FileOutputStream(out)).use { bos -> zis.copyTo(bos) }
+                    }
+                }
+                zis.closeEntry()
+                entry = zis.nextEntry
+            }
+        }
+        zip.delete()
+        if (!aapt2.isFile || !zipalign.isFile) {
+            throw IllegalStateException("内置 jniLibs.zip 中没有找到 $abi 的 aapt2/zipalign")
+        }
+        RootShell.run("chmod 755 '${aapt2.absolutePath}' '${zipalign.absolutePath}'")
+        return aapt2 to zipalign
+    }
+}

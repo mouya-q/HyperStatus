@@ -1,1 +1,389 @@
-cGFja2FnZSBkZXYuaHlwZXJzdGF0dXMub3ZlcmxheQoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5Db250ZXh0CmltcG9ydCBkZXYuaHlwZXJzdGF0dXMuUm9vdFNoZWxsCmltcG9ydCBkZXYuaHlwZXJzdGF0dXMuU2hlbGxSZXN1bHQKaW1wb3J0IGRldi5oeXBlcnN0YXR1cy5hcGtzaWduZXIuQ3J5cHRvVXRpbHMKaW1wb3J0IGRldi5oeXBlcnN0YXR1cy5hcGtzaWduZXIuU2lnbkFQSwppbXBvcnQgamF2YS5pby5GaWxlCmltcG9ydCBqYXZhLmlvLkZpbGVPdXRwdXRTdHJlYW0KaW1wb3J0IGphdmEuaW8uU3RyaW5nV3JpdGVyCmltcG9ydCBqYXZhLnNlY3VyaXR5LlByaXZhdGVLZXkKaW1wb3J0IGphdmEuc2VjdXJpdHkuY2VydC5YNTA5Q2VydGlmaWNhdGUKaW1wb3J0IGphdmEudXRpbC56aXAuWmlwSW5wdXRTdHJlYW0KaW1wb3J0IGphdmF4LnhtbC5wYXJzZXJzLkRvY3VtZW50QnVpbGRlckZhY3RvcnkKaW1wb3J0IGphdmF4LnhtbC50cmFuc2Zvcm0uT3V0cHV0S2V5cwppbXBvcnQgamF2YXgueG1sLnRyYW5zZm9ybS5UcmFuc2Zvcm1lckZhY3RvcnkKaW1wb3J0IGphdmF4LnhtbC50cmFuc2Zvcm0uZG9tLkRPTVNvdXJjZQppbXBvcnQgamF2YXgueG1sLnRyYW5zZm9ybS5zdHJlYW0uU3RyZWFtUmVzdWx0CgpjbGFzcyBJY29uaWZ5TGl0ZUNvbXBpbGVyKHByaXZhdGUgdmFsIGNvbnRleHQ6IENvbnRleHQpIHsKICAgIGNvbXBhbmlvbiBvYmplY3QgewogICAgICAgIGNvbnN0IHZhbCBTWVNURU1fVUkgPSAiY29tLmFuZHJvaWQuc3lzdGVtdWkiCiAgICAgICAgY29uc3QgdmFsIEZSQU1FV09SSyA9ICJhbmRyb2lkIgogICAgICAgIGNvbnN0IHZhbCBTWVNURU1fT1ZFUkxBWV9ESVIgPSAiL3N5c3RlbS9wcm9kdWN0L292ZXJsYXkiCiAgICAgICAgY29uc3QgdmFsIE1PRFVMRV9ESVIgPSAiL2RhdGEvYWRiL21vZHVsZXMvSHlwZXJTdGF0dXNMaXRlIgogICAgICAgIGNvbnN0IHZhbCBNT0RVTEVfT1ZFUkxBWV9ESVIgPSAiJE1PRFVMRV9ESVIvc3lzdGVtL3Byb2R1Y3Qvb3ZlcmxheSIKICAgICAgICBjb25zdCB2YWwgTEVHQUNZX1NZU1RFTVVJID0gImRldi5oeXBlcnN0YXR1cy5vdmVybGF5LnN5c3RlbXVpIgogICAgICAgIGNvbnN0IHZhbCBMRUdBQ1lfRlJBTUVXT1JLID0gImRldi5oeXBlcnN0YXR1cy5vdmVybGF5LmZyYW1ld29yayIKICAgIH0KCiAgICBkYXRhIGNsYXNzIEJ1aWxkT3V0cHV0KHZhbCBwYWNrYWdlTmFtZTogU3RyaW5nLCB2YWwgYXBrOiBGaWxlLCB2YWwgbG9nOiBTdHJpbmcpCgogICAgcHJpdmF0ZSB2YWwgd29ya0RpciA9IEZpbGUoY29udGV4dC5maWxlc0RpciwgImh5cGVyc3RhdHVzL3dvcmsiKQogICAgcHJpdmF0ZSB2YWwgdW5zaWduZWRVbmFsaWduZWQgPSBGaWxlKHdvcmtEaXIsICJ1bnNpZ25lZC11bmFsaWduZWQiKQogICAgcHJpdmF0ZSB2YWwgdW5zaWduZWQgPSBGaWxlKHdvcmtEaXIsICJ1bnNpZ25lZCIpCiAgICBwcml2YXRlIHZhbCBzaWduZWQgPSBGaWxlKHdvcmtEaXIsICJzaWduZWQiKQoKICAgIGZ1biBhcHBseShjb25maWc6IGRldi5oeXBlcnN0YXR1cy5UdW5pbmdDb25maWcpOiBSZXN1bHQgewogICAgICAgIGlmICghUm9vdFNoZWxsLmF2YWlsYWJsZSgpKSByZXR1cm4gUmVzdWx0KGZhbHNlLCAi5pyq6I635b6XIHJvb3Qg5o6I5p2D44CCXG7or7fnu5kgSHlwZXJTdGF0dXMgcm9vdCDmnYPpmZDlkI7ph43or5XjgIIiKQogICAgICAgIHJldHVybiB0cnkgewogICAgICAgICAgICB2YWwgcHJlZmxpZ2h0ID0gcHJlZmxpZ2h0KGNvbmZpZykKICAgICAgICAgICAgaWYgKCFwcmVmbGlnaHQub2spIHJldHVybiBSZXN1bHQoZmFsc2UsIHByZWZsaWdodC5sb2cpCgogICAgICAgICAgICBwcmVwYXJlTW9kdWxlRGlyKCkKICAgICAgICAgICAgZGlzYWJsZU91ck92ZXJsYXlzKCkKICAgICAgICAgICAgY2xlYW51cExlZ2FjeSgpCiAgICAgICAgICAgIGVuc3VyZVRvb2xzKCkKCiAgICAgICAgICAgIHZhbCBidWlsdCA9IG11dGFibGVMaXN0T2Y8QnVpbGRPdXRwdXQ+KCkKICAgICAgICAgICAgdmFsIHN5c3RlbVVpID0gSWNvbmlmeVJlc291cmNlcy5idWlsZFN5c3RlbVVpKAogICAgICAgICAgICAgICAgaWYgKGNvbmZpZy5zdGFydEVuYWJsZWQpIGNvbmZpZy5zdGFydERwIGVsc2UgbnVsbCwKICAgICAgICAgICAgICAgIGlmIChjb25maWcuZW5kRW5hYmxlZCkgY29uZmlnLmVuZERwIGVsc2UgbnVsbCwKICAgICAgICAgICAgICAgIGlmIChjb25maWcuaGVpZ2h0RW5hYmxlZCkgY29uZmlnLmhlaWdodERwIGVsc2UgbnVsbAogICAgICAgICAgICApCiAgICAgICAgICAgIHZhbCBmcmFtZXdvcmsgPSBJY29uaWZ5UmVzb3VyY2VzLmJ1aWxkRnJhbWV3b3JrKAogICAgICAgICAgICAgICAgaWYgKGNvbmZpZy5oZWlnaHRFbmFibGVkKSBjb25maWcuaGVpZ2h0RHAgZWxzZSBudWxsLAogICAgICAgICAgICAgICAgY29uZmlnLm5vdGNoS2lsbGVyCiAgICAgICAgICAgICkKICAgICAgICAgICAgc3lzdGVtVWk/LmxldCB7IGJ1aWx0ICs9IGJ1aWxkT3ZlcmxheShpdCkgfQogICAgICAgICAgICBmcmFtZXdvcms/LmxldCB7IGJ1aWx0ICs9IGJ1aWxkT3ZlcmxheShpdCkgfQoKICAgICAgICAgICAgcmVtb3ZlSW5zdGFsbGVkT3ZlcmxheUlmVW51c2VkKFNZU1RFTV9VSSwgc3lzdGVtVWkgIT0gbnVsbCkKICAgICAgICAgICAgcmVtb3ZlSW5zdGFsbGVkT3ZlcmxheUlmVW51c2VkKEZSQU1FV09SSywgZnJhbWV3b3JrICE9IG51bGwpCiAgICAgICAgICAgIGZvciAob3V0cHV0IGluIGJ1aWx0KSB7CiAgICAgICAgICAgICAgICBkZXBsb3lPdmVybGF5KG91dHB1dCkKICAgICAgICAgICAgfQoKICAgICAgICAgICAgdmFsIGxpdmUgPSB0cnlFbmFibGVMaXZlKGJ1aWx0Lm1hcCB7IGl0LnBhY2thZ2VOYW1lIH0pCiAgICAgICAgICAgIHZhbCB0ZXh0ID0gYnVpbGRTdHJpbmcgewogICAgICAgICAgICAgICAgYXBwZW5kKCJJY29uaWZ5IExpdGUg6LWE5rqQIE92ZXJsYXkg5bey55Sf5oiQ44CCXG5cbiIpCiAgICAgICAgICAgICAgICBhcHBlbmQoIuebruagh+i1hOa6kOS4juWAvOayv+eUqCBJY29uaWZ5IOWvueW6lOWunueOsOOAglxuIikKICAgICAgICAgICAgICAgIGFwcGVuZCgi5pys5qyh5LuF5aSE55CGIGFuZHJvaWQgLyBjb20uYW5kcm9pZC5zeXN0ZW11aeOAglxuIikKICAgICAgICAgICAgICAgIGFwcGVuZCgi5rKh5pyJ5L+u5pS544CB5Yig6Zmk5oiW5pu/5o2iIGh5cGVyb3MucnVzdHJ1bnRpbWUuKuOAglxuXG4iKQogICAgICAgICAgICAgICAgYXBwZW5kKGxpdmUpCiAgICAgICAgICAgICAgICBhcHBlbmQoIlxuXG7mnoTlu7rml6Xlv5fvvJpcbiIpCiAgICAgICAgICAgICAgICBidWlsdC5mb3JFYWNoIHsgYXBwZW5kKCI9PT09ICIpLmFwcGVuZChpdC5wYWNrYWdlTmFtZSkuYXBwZW5kKCIgPT09PVxuIikuYXBwZW5kKGl0LmxvZykuYXBwZW5kKCdcbicpIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBSZXN1bHQodHJ1ZSwgdGV4dCkKICAgICAgICB9IGNhdGNoICh0OiBUaHJvd2FibGUpIHsKICAgICAgICAgICAgUmVzdWx0KGZhbHNlLCAi5bqU55So5aSx6LSl77yaJHtzdGFja1RyYWNlKHQpfSIpCiAgICAgICAgfQogICAgfQoKICAgIGZ1biByZXN0b3JlKCk6IFJlc3VsdCB7CiAgICAgICAgaWYgKCFSb290U2hlbGwuYXZhaWxhYmxlKCkpIHJldHVybiBSZXN1bHQoZmFsc2UsICLmnKrojrflvpcgcm9vdCDmjojmnYPjgIIiKQogICAgICAgIHJldHVybiB0cnkgewogICAgICAgICAgICBkaXNhYmxlT3VyT3ZlcmxheXMoKQogICAgICAgICAgICBjbGVhbnVwTGVnYWN5KCkKICAgICAgICAgICAgcmVtb3ZlRmlsZXNCeVByZWZpeChTWVNURU1fT1ZFUkxBWV9ESVIsIGxpc3RPZigiZGV2Lmh5cGVyc3RhdHVzLmljb25pZnlsaXRlLnN5c3RlbXVpIiwgImRldi5oeXBlcnN0YXR1cy5pY29uaWZ5bGl0ZS5mcmFtZXdvcmsiKSkKICAgICAgICAgICAgcmVtb3ZlRmlsZXNCeVByZWZpeChNT0RVTEVfT1ZFUkxBWV9ESVIsIGxpc3RPZigiZGV2Lmh5cGVyc3RhdHVzLmljb25pZnlsaXRlLnN5c3RlbXVpIiwgImRldi5oeXBlcnN0YXR1cy5pY29uaWZ5bGl0ZS5mcmFtZXdvcmsiKSkKICAgICAgICAgICAgdmFsIHJlc3RhcnQgPSBSb290U2hlbGwucnVuKCJraWxsYWxsICRTWVNURU1fVUkiKQogICAgICAgICAgICBSZXN1bHQodHJ1ZSwgYnVpbGRTdHJpbmcgewogICAgICAgICAgICAgICAgYXBwZW5kKCLlt7LmgaLlpI0gSHlwZXJTdGF0dXMgTGl0ZeOAglxuIikKICAgICAgICAgICAgICAgIGFwcGVuZCgi5Y+q56e76Zmk5LqGIEh5cGVyU3RhdHVzIExpdGUg6Ieq5bex55qEIE92ZXJsYXkg5paH5Lu244CCXG4iKQogICAgICAgICAgICAgICAgYXBwZW5kKCLmnKrop6bnorAgZnJhbWV3b3JrLXJlc+OAgVN5c3RlbVVJIOaIliBoeXBlcm9zLnJ1c3RydW50aW1lLirjgIJcbiIpCiAgICAgICAgICAgICAgICBhcHBlbmQoaWYgKHJlc3RhcnQub2spICJTeXN0ZW1VSSDlt7Lph43lkK/jgIIiIGVsc2UgIlN5c3RlbVVJIOmHjeWQr+Wksei0pe+8miR7cmVzdGFydC50ZXh0KCl9IikKICAgICAgICAgICAgfSkKICAgICAgICB9IGNhdGNoICh0OiBUaHJvd2FibGUpIHsKICAgICAgICAgICAgUmVzdWx0KGZhbHNlLCAi5oGi5aSN5aSx6LSl77yaJHtzdGFja1RyYWNlKHQpfSIpCiAgICAgICAgfQogICAgfQoKCiAgICBmdW4gc3RhdHVzKCk6IFN0cmluZyA9IFJvb3RTaGVsbC5ydW4oImNtZCBvdmVybGF5IGxpc3QgLS11c2VyIDAgfCBncmVwIC1GICdkZXYuaHlwZXJzdGF0dXMuaWNvbmlmeWxpdGUnIHx8IHRydWUiKS50ZXh0KCkKCiAgICBmdW4gc2NhbigpOiBTdHJpbmcgewogICAgICAgIHJldHVybiB0cnkgewogICAgICAgICAgICB2YWwgbGluZXMgPSBtdXRhYmxlTGlzdE9mPFN0cmluZz4oKQogICAgICAgICAgICBsaW5lcyArPSAiPT09IEh5cGVyU3RhdHVzIEljb25pZnkgTGl0ZSBzYWZldHkgc2NhbiA9PT0iCiAgICAgICAgICAgIGxpbmVzICs9ICJSb290OiAke1Jvb3RTaGVsbC5hdmFpbGFibGUoKX0iCiAgICAgICAgICAgIGxpbmVzICs9ICJBbmRyb2lkOiAke2FuZHJvaWQub3MuQnVpbGQuVkVSU0lPTi5SRUxFQVNFfSAoU0RLICR7YW5kcm9pZC5vcy5CdWlsZC5WRVJTSU9OLlNES19JTlR9KSIKICAgICAgICAgICAgbGluZXMgKz0gIkFCSTogJHthbmRyb2lkLm9zLkJ1aWxkLlNVUFBPUlRFRF9BQklTLmpvaW5Ub1N0cmluZygpfSIKICAgICAgICAgICAgbGluZXMgKz0gIk1JVUkvSHlwZXJPUyBwcm9wZXJ0eTogJHsKICAgICAgICAgICAgICAgIFJvb3RTaGVsbC5ydW4oImdldHByb3Agcm8ubWl1aS51aS52ZXJzaW9uLm5hbWUiKS5vdXQubGluZVNlcXVlbmNlKCkuZmlyc3RPck51bGwgeyBpdC5pc05vdEJsYW5rKCkgfT8udHJpbSgpID86ICIoZW1wdHkpIgogICAgICAgICAgICB9IgogICAgICAgICAgICBsaW5lcyArPSAiZnJhbWV3b3JrLXJlczogJHtmaW5kRmlyc3RFeGlzdGluZyhsaXN0T2YoIi9zeXN0ZW0vZnJhbWV3b3JrL2ZyYW1ld29yay1yZXMuYXBrIiwgIi9zeXN0ZW1fZXh0L2ZyYW1ld29yay9mcmFtZXdvcmstcmVzLmFwayIpKX0iCiAgICAgICAgICAgIGxpbmVzICs9ICJTeXN0ZW1VSTogJHtSb290U2hlbGwucnVuKCJwbSBwYXRoICRTWVNURU1fVUkiKS50ZXh0KCl9IgogICAgICAgICAgICB2YWwgdGFyZ2V0cyA9IGxpc3RPZigKICAgICAgICAgICAgICAgIFNZU1RFTV9VSSB0byBsaXN0T2YoInN0YXR1c19iYXJfcGFkZGluZ19zdGFydCIsICJzdGF0dXNfYmFyX3BhZGRpbmdfZW5kIiwgInN0YXR1c19iYXJfaGVpZ2h0IiksCiAgICAgICAgICAgICAgICBGUkFNRVdPUksgdG8gbGlzdE9mKCJzdGF0dXNfYmFyX2hlaWdodCIsICJzdGF0dXNfYmFyX2hlaWdodF9kZWZhdWx0IiwgInN0YXR1c19iYXJfaGVpZ2h0X3BvcnRyYWl0IiwgInN0YXR1c19iYXJfaGVpZ2h0X2xhbmRzY2FwZSIsICJjb25maWdfZmlsbE1haW5CdWlsdEluRGlzcGxheUN1dG91dCIsICJjb25maWdfbWFza01haW5CdWlsdEluRGlzcGxheUN1dG91dCIsICJjb25maWdfbWFpbkJ1aWx0SW5EaXNwbGF5Q3V0b3V0IiwgImNvbmZpZ19tYWluQnVpbHRJbkRpc3BsYXlDdXRvdXRSZWN0QXBwcm94aW1hdGlvbiIpCiAgICAgICAgICAgICkKICAgICAgICAgICAgZm9yICgocGtnLCBuYW1lcykgaW4gdGFyZ2V0cykgewogICAgICAgICAgICAgICAgbGluZXMgKz0gIi0tLSAkcGtnIC0tLSIKICAgICAgICAgICAgICAgIGZvciAobmFtZSBpbiBuYW1lcykgewogICAgICAgICAgICAgICAgICAgIHZhbCBhcGs6IFN0cmluZz8gPSBpZiAocGtnID09IFNZU1RFTV9VSSkgewogICAgICAgICAgICAgICAgICAgICAgICBSb290U2hlbGwucnVuKCJwbSBwYXRoICRTWVNURU1fVUkiKS5vdXQubGluZVNlcXVlbmNlKCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5maXJzdE9yTnVsbCB7IGl0LmlzTm90QmxhbmsoKSB9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA/LnRyaW0oKT8ucmVtb3ZlUHJlZml4KCJwYWNrYWdlOiIpCiAgICAgICAgICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgICAgICAgICAgZmluZEZpcnN0RXhpc3RpbmcobGlzdE9mKCIvc3lzdGVtL2ZyYW1ld29yay9mcmFtZXdvcmstcmVzLmFwayIsICIvc3lzdGVtX2V4dC9mcmFtZXdvcmsvZnJhbWV3b3JrLXJlcy5hcGsiKSkKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgaWYgKGFway5pc051bGxPckJsYW5rKCkgfHwgYXBrID09ICIobm9uZSkiKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIGxpbmVzICs9ICIkbmFtZTogdGFyZ2V0IEFQSyB1bmF2YWlsYWJsZSIKICAgICAgICAgICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgICAgICAgICB2YWwgciA9IGR1bXBSZXNvdXJjZVNlYXJjaChhcGssIG5hbWUpCiAgICAgICAgICAgICAgICAgICAgICAgIGxpbmVzICs9ICIkbmFtZTogJHtpZiAocikgIkZPVU5EIiBlbHNlICJub3QgZm91bmQgLyBkdW1wIGZhaWxlZCJ9IgogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBsaW5lcyArPSAiLS0tIFYzIHJ1bnRpbWUgcmVmZXJlbmNlcyAocmVhZC1vbmx5KSAtLS0iCiAgICAgICAgICAgIGxpbmVzICs9IFJvb3RTaGVsbC5ydW4oImdyZXAgLVJpbCAnaHlwZXJvcy5ydXN0cnVudGltZS52MycgL3Byb2R1Y3QvZXRjL3Blcm1pc3Npb25zIC9zeXN0ZW1fZXh0L2V0Yy9wZXJtaXNzaW9ucyAvc3lzdGVtL2V0Yy9wZXJtaXNzaW9ucyAvdmVuZG9yL2V0Yy9wZXJtaXNzaW9ucyAyPi9kZXYvbnVsbCB8IGhlYWQgLTMwIikudGV4dCgpCiAgICAgICAgICAgIGxpbmVzICs9ICItLS0gb3VyIG92ZXJsYXlzIC0tLSIKICAgICAgICAgICAgbGluZXMgKz0gUm9vdFNoZWxsLnJ1bigiY21kIG92ZXJsYXkgbGlzdCAtLXVzZXIgMCB8IGdyZXAgLUYgJ2Rldi5oeXBlcnN0YXR1cy5pY29uaWZ5bGl0ZScgfHwgdHJ1ZSIpLnRleHQoKQogICAgICAgICAgICBsaW5lcy5qb2luVG9TdHJpbmcoIlxuIikKICAgICAgICB9IGNhdGNoICh0OiBUaHJvd2FibGUpIHsKICAgICAgICAgICAgIuaJq+aPj+Wksei0pe+8miR7c3RhY2tUcmFjZSh0KX0iCiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgZnVuIHByZWZsaWdodChjb25maWc6IGRldi5oeXBlcnN0YXR1cy5UdW5pbmdDb25maWcpOiBQcmVmbGlnaHQgewogICAgICAgIHZhbCBzY2FuID0gc2NhbigpCiAgICAgICAgdmFsIGZhaWx1cmVzID0gbXV0YWJsZUxpc3RPZjxTdHJpbmc+KCkKICAgICAgICBpZiAoIVJvb3RTaGVsbC5ydW4oIlsgLWYgL3N5c3RlbS9mcmFtZXdvcmsvZnJhbWV3b3JrLXJlcy5hcGsgXSB8fCBbIC1mIC9zeXN0ZW1fZXh0L2ZyYW1ld29yay9mcmFtZXdvcmstcmVzLmFwayBdIikub2spIHsKICAgICAgICAgICAgZmFpbHVyZXMgKz0gImZyYW1ld29yay1yZXMuYXBrIOacquaJvuWIsOOAgiIKICAgICAgICB9CiAgICAgICAgdmFsIHVpQXBrOiBTdHJpbmc/ID0gUm9vdFNoZWxsLnJ1bigicG0gcGF0aCAkU1lTVEVNX1VJIikub3V0LmxpbmVTZXF1ZW5jZSgpCiAgICAgICAgICAgIC5maXJzdE9yTnVsbCB7IGl0LmlzTm90QmxhbmsoKSB9CiAgICAgICAgICAgID8udHJpbSgpPy5yZW1vdmVQcmVmaXgoInBhY2thZ2U6IikKICAgICAgICBpZiAodWlBcGsuaXNOdWxsT3JCbGFuaygpKSBmYWlsdXJlcyArPSAi5peg5rOV5a6a5L2NIGNvbS5hbmRyb2lkLnN5c3RlbXVp44CCIgoKICAgICAgICAvLyBPbmx5IHJlamVjdCBtaXNzaW5nIHJlc291cmNlcyB0aGF0IHRoZSB1c2VyIGV4cGxpY2l0bHkgYXNrZWQgdG8gbW9kaWZ5LgogICAgICAgIHZhbCB1aUNoZWNrcyA9IGJ1aWxkTGlzdCB7CiAgICAgICAgICAgIGlmIChjb25maWcuc3RhcnRFbmFibGVkKSBhZGQoIiRTWVNURU1fVUkgc3RhdHVzX2Jhcl9wYWRkaW5nX3N0YXJ0IikKICAgICAgICAgICAgaWYgKGNvbmZpZy5lbmRFbmFibGVkKSBhZGQoIiRTWVNURU1fVUkgc3RhdHVzX2Jhcl9wYWRkaW5nX2VuZCIpCiAgICAgICAgICAgIGlmIChjb25maWcuaGVpZ2h0RW5hYmxlZCkgYWRkKCIkU1lTVEVNX1VJIHN0YXR1c19iYXJfaGVpZ2h0IikKICAgICAgICB9CiAgICAgICAgdmFsIGZ3Q2hlY2tzID0gYnVpbGRMaXN0IHsKICAgICAgICAgICAgaWYgKGNvbmZpZy5oZWlnaHRFbmFibGVkKSBhZGQoIiRGUkFNRVdPUksgc3RhdHVzX2Jhcl9oZWlnaHQiKQogICAgICAgICAgICBpZiAoY29uZmlnLmhlaWdodEVuYWJsZWQpIGFkZCgiJEZSQU1FV09SSyBzdGF0dXNfYmFyX2hlaWdodF9kZWZhdWx0IikKICAgICAgICAgICAgaWYgKGNvbmZpZy5oZWlnaHRFbmFibGVkKSBhZGQoIiRGUkFNRVdPUksgc3RhdHVzX2Jhcl9oZWlnaHRfcG9ydHJhaXQiKQogICAgICAgICAgICBpZiAoY29uZmlnLmhlaWdodEVuYWJsZWQpIGFkZCgiJEZSQU1FV09SSyBzdGF0dXNfYmFyX2hlaWdodF9sYW5kc2NhcGUiKQogICAgICAgICAgICBpZiAoY29uZmlnLm5vdGNoS2lsbGVyKSBhZGRBbGwobGlzdE9mKAogICAgICAgICAgICAgICAgIiRGUkFNRVdPUksgY29uZmlnX2ZpbGxNYWluQnVpbHRJbkRpc3BsYXlDdXRvdXQiLAogICAgICAgICAgICAgICAgIiRGUkFNRVdPUksgY29uZmlnX21hc2tNYWluQnVpbHRJbkRpc3BsYXlDdXRvdXQiLAogICAgICAgICAgICAgICAgIiRGUkFNRVdPUksgY29uZmlnX21haW5CdWlsdEluRGlzcGxheUN1dG91dCIsCiAgICAgICAgICAgICAgICAiJEZSQU1FV09SSyBjb25maWdfbWFpbkJ1aWx0SW5EaXNwbGF5Q3V0b3V0UmVjdEFwcHJveGltYXRpb24iCiAgICAgICAgICAgICkpCiAgICAgICAgfQogICAgICAgIGZvciAoY2hlY2sgaW4gdWlDaGVja3MgKyBmd0NoZWNrcykgewogICAgICAgICAgICB2YWwgcGFydHMgPSBjaGVjay5zcGxpdCgnICcsIGxpbWl0ID0gMikKICAgICAgICAgICAgdmFsIHBrZyA9IHBhcnRzWzBdCiAgICAgICAgICAgIHZhbCBuYW1lID0gcGFydHNbMV0KICAgICAgICAgICAgdmFsIGFwayA9IGlmIChwa2cgPT0gU1lTVEVNX1VJKSB1aUFwayBlbHNlIGZpbmRGaXJzdEV4aXN0aW5nKGxpc3RPZigiL3N5c3RlbS9mcmFtZXdvcmsvZnJhbWV3b3JrLXJlcy5hcGsiLCAiL3N5c3RlbV9leHQvZnJhbWV3b3JrL2ZyYW1ld29yay1yZXMuYXBrIikpCiAgICAgICAgICAgIGlmIChhcGsuaXNOdWxsT3JCbGFuaygpIHx8ICFkdW1wUmVzb3VyY2VTZWFyY2goYXBrLCBuYW1lKSkgZmFpbHVyZXMgKz0gIui1hOa6kOacquaJvuWIsO+8miRwa2c6JG5hbWUiCiAgICAgICAgfQogICAgICAgIHZhbCBkYW5nZXJvdXNSZWZlcmVuY2UgPSBSb290U2hlbGwucnVuKCJncmVwIC1SaWwgJ2h5cGVyb3MucnVzdHJ1bnRpbWUudjMnICR7Y29udGV4dC5maWxlc0Rpci5hYnNvbHV0ZVBhdGh9Ly4gMj4vZGV2L251bGwgfCBoZWFkIC0xIikudGV4dCgpCiAgICAgICAgaWYgKGRhbmdlcm91c1JlZmVyZW5jZS5pc05vdEJsYW5rKCkpIGZhaWx1cmVzICs9ICLlhoXpg6jlt6XkvZznm67lvZXlh7rnjrAgcnVzdHJ1bnRpbWUg5YWz6ZSu5a2X77yM5bey5YGc5q2i44CCIgogICAgICAgIGlmIChmYWlsdXJlcy5pc05vdEVtcHR5KCkpIHJldHVybiBQcmVmbGlnaHQoZmFsc2UsIHNjYW4gKyAiXG5cbj09PSDpooTmo4DlpLHotKUgPT09XG4iICsgZmFpbHVyZXMuam9pblRvU3RyaW5nKCJcbiIpKQogICAgICAgIHJldHVybiBQcmVmbGlnaHQodHJ1ZSwgc2NhbiArICJcblxuPT09IOmihOajgOmAmui/hyA9PT0iKQogICAgfQoKICAgIHByaXZhdGUgZGF0YSBjbGFzcyBQcmVmbGlnaHQodmFsIG9rOiBCb29sZWFuLCB2YWwgbG9nOiBTdHJpbmcpCgogICAgcHJpdmF0ZSBmdW4gYnVpbGRPdmVybGF5KHNwZWM6IE92ZXJsYXlTcGVjKTogQnVpbGRPdXRwdXQgewogICAgICAgIHZhbCBzYWZlTmFtZSA9IGlmIChzcGVjLnRhcmdldFBhY2thZ2UgPT0gU1lTVEVNX1VJKSAiZGV2Lmh5cGVyc3RhdHVzLmljb25pZnlsaXRlLnN5c3RlbXVpIiBlbHNlICJkZXYuaHlwZXJzdGF0dXMuaWNvbmlmeWxpdGUuZnJhbWV3b3JrIgogICAgICAgIHZhbCBzb3VyY2UgPSBGaWxlKHdvcmtEaXIsIHNhZmVOYW1lLnJlcGxhY2UoJy4nLCAnXycpKQogICAgICAgIHNvdXJjZS5kZWxldGVSZWN1cnNpdmVseSgpCiAgICAgICAgRmlsZShzb3VyY2UsICJyZXMvdmFsdWVzIikubWtkaXJzKCkKICAgICAgICBGaWxlKHNvdXJjZSwgIkFuZHJvaWRNYW5pZmVzdC54bWwiKS53cml0ZVRleHQoY3JlYXRlTWFuaWZlc3Qoc2FmZU5hbWUsIHNwZWMudGFyZ2V0UGFja2FnZSwgc3BlYy5jYXRlZ29yeSkpCiAgICAgICAgdmFsIHZhbHVlcyA9IGJ1aWxkU3RyaW5nIHsKICAgICAgICAgICAgYXBwZW5kKCI8P3htbCB2ZXJzaW9uPVwiMS4wXCIgZW5jb2Rpbmc9XCJ1dGYtOFwiPz5cbjxyZXNvdXJjZXM+XG4iKQogICAgICAgICAgICBzcGVjLnJlc291cmNlcy5mb3JFYWNoIHsgciAtPgogICAgICAgICAgICAgICAgYXBwZW5kKCIgICAgPCR7ci50eXBlfSBuYW1lPVwiJHtyLm5hbWV9XCI+IikKICAgICAgICAgICAgICAgIGFwcGVuZChlc2NhcGVYbWwoci52YWx1ZSkpCiAgICAgICAgICAgICAgICBhcHBlbmQoIjwvJHtyLnR5cGV9PlxuIikKICAgICAgICAgICAgfQogICAgICAgICAgICBhcHBlbmQoIjwvcmVzb3VyY2VzPlxuIikKICAgICAgICB9CiAgICAgICAgRmlsZShzb3VyY2UsICJyZXMvdmFsdWVzL2ljb25pZnlfbGl0ZS54bWwiKS53cml0ZVRleHQodmFsdWVzKQoKICAgICAgICB2YWwgKGFhcHQyLCB6aXBhbGlnbikgPSBUb29sSW5zdGFsbGVyLmVuc3VyZShjb250ZXh0KQogICAgICAgIHZhbCB1bmFsaWduZWQgPSBGaWxlKHVuc2lnbmVkVW5hbGlnbmVkLCAiJHNhZmVOYW1lLXVuc2lnbmVkLXVuYWxpZ25lZC5hcGsiKQogICAgICAgIHZhbCBhbGlnbmVkID0gRmlsZSh1bnNpZ25lZCwgIiRzYWZlTmFtZS11bnNpZ25lZC5hcGsiKQogICAgICAgIHZhbCBvdXRwdXQgPSBGaWxlKHNpZ25lZCwgIiRzYWZlTmFtZS5hcGsiKQogICAgICAgIHVuc2lnbmVkVW5hbGlnbmVkLm1rZGlycygpOyB1bnNpZ25lZC5ta2RpcnMoKTsgc2lnbmVkLm1rZGlycygpCiAgICAgICAgdW5hbGlnbmVkLmRlbGV0ZSgpOyBhbGlnbmVkLmRlbGV0ZSgpOyBvdXRwdXQuZGVsZXRlKCkKCiAgICAgICAgdmFsIHRhcmdldEFwa3M6IExpc3Q8U3RyaW5nPiA9IGlmIChzcGVjLnRhcmdldFBhY2thZ2UgPT0gU1lTVEVNX1VJKSB7CiAgICAgICAgICAgIFJvb3RTaGVsbC5ydW4oInBtIHBhdGggJFNZU1RFTV9VSSIpLm91dC5saW5lU2VxdWVuY2UoKQogICAgICAgICAgICAgICAgLm1hcE5vdE51bGwgeyBsaW5lIC0+CiAgICAgICAgICAgICAgICAgICAgdmFsIHAgPSBsaW5lLnRyaW0oKS5yZW1vdmVQcmVmaXgoInBhY2thZ2U6IikKICAgICAgICAgICAgICAgICAgICBpZiAocC5lbmRzV2l0aCgiLmFwayIpKSBwIGVsc2UgbnVsbAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgLnRvTGlzdCgpCiAgICAgICAgfSBlbHNlIGVtcHR5TGlzdCgpCiAgICAgICAgdmFsIGZyYW1ld29yayA9IGZpbmRGaXJzdEV4aXN0aW5nKGxpc3RPZigiL3N5c3RlbS9mcmFtZXdvcmsvZnJhbWV3b3JrLXJlcy5hcGsiLCAiL3N5c3RlbV9leHQvZnJhbWV3b3JrL2ZyYW1ld29yay1yZXMuYXBrIikpCiAgICAgICAgICAgID86IHRocm93IElsbGVnYWxTdGF0ZUV4Y2VwdGlvbigiZnJhbWV3b3JrLXJlcy5hcGsgbWlzc2luZyIpCgogICAgICAgIHZhbCBjb21waWxlRGlyID0gRmlsZShzb3VyY2UsICJjb21waWxlZCIpLmFwcGx5IHsgbWtkaXJzKCkgfQogICAgICAgIHZhbCBjb21waWxlID0gUm9vdFNoZWxsLnJ1bigKICAgICAgICAgICAgInJtIC1yZiAnJHtjb21waWxlRGlyLmFic29sdXRlUGF0aH0nICcke3VuYWxpZ25lZC5hYnNvbHV0ZVBhdGh9JyIsCiAgICAgICAgICAgICJta2RpciAtcCAnJHtjb21waWxlRGlyLmFic29sdXRlUGF0aH0nIiwKICAgICAgICAgICAgIicke2FhcHQyLmFic29sdXRlUGF0aH0nIGNvbXBpbGUgLS1kaXIgJyR7RmlsZShzb3VyY2UsICJyZXMiKS5hYnNvbHV0ZVBhdGh9JyAtbyAnJHtjb21waWxlRGlyLmFic29sdXRlUGF0aH0nIgogICAgICAgICkKICAgICAgICBpZiAoIWNvbXBpbGUub2spIHRocm93IElsbGVnYWxTdGF0ZUV4Y2VwdGlvbigiQUFQVDIgY29tcGlsZSBmYWlsZWQ6XG4ke2NvbXBpbGUudGV4dCgpfSIpCiAgICAgICAgdmFsIGltcG9ydHMgPSBidWlsZFN0cmluZyB7CiAgICAgICAgICAgIGFwcGVuZCgiIC1JICciKS5hcHBlbmQoZnJhbWV3b3JrKS5hcHBlbmQoIiciKQogICAgICAgICAgICBmb3IgKGV4dHJhIGluIHRhcmdldEFwa3MpIHsKICAgICAgICAgICAgICAgIGlmIChleHRyYSAhPSBmcmFtZXdvcmspIGFwcGVuZCgiIC1JICciKS5hcHBlbmQoZXh0cmEpLmFwcGVuZCgiJyIpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgdmFsIGxpbmsgPSBSb290U2hlbGwucnVuKAogICAgICAgICAgICAiJyR7YWFwdDIuYWJzb2x1dGVQYXRofScgbGluayAtbyAnJHt1bmFsaWduZWQuYWJzb2x1dGVQYXRofScgLUkgJyRmcmFtZXdvcmsnIC0tbWFuaWZlc3QgJyR7RmlsZShzb3VyY2UsICJBbmRyb2lkTWFuaWZlc3QueG1sIikuYWJzb2x1dGVQYXRofScgJyR7Y29tcGlsZURpci5hYnNvbHV0ZVBhdGh9Jy8qIC0tYXV0by1hZGQtb3ZlcmxheSRpbXBvcnRzIgogICAgICAgICkKICAgICAgICBpZiAoIWxpbmsub2spIHRocm93IElsbGVnYWxTdGF0ZUV4Y2VwdGlvbigiQUFQVDIgbGluayBmYWlsZWQ6XG4ke2xpbmsudGV4dCgpfSIpCiAgICAgICAgdmFsIGFsaWduID0gUm9vdFNoZWxsLnJ1bigiJyR7emlwYWxpZ24uYWJzb2x1dGVQYXRofScgLWYgNCAnJHt1bmFsaWduZWQuYWJzb2x1dGVQYXRofScgJyR7YWxpZ25lZC5hYnNvbHV0ZVBhdGh9JyIpCiAgICAgICAgaWYgKCFhbGlnbi5vaykgdGhyb3cgSWxsZWdhbFN0YXRlRXhjZXB0aW9uKCJ6aXBhbGlnbiBmYWlsZWQ6XG4ke2FsaWduLnRleHQoKX0iKQoKICAgICAgICB2YWwgY2VydDogWDUwOUNlcnRpZmljYXRlID0gY29udGV4dC5hc3NldHMub3BlbigiS2V5c3RvcmUvdGVzdGtleS54NTA5LnBlbSIpLnVzZSB7IENyeXB0b1V0aWxzLnJlYWRDZXJ0aWZpY2F0ZShpdCkgfQogICAgICAgIHZhbCBrZXk6IFByaXZhdGVLZXkgPSBjb250ZXh0LmFzc2V0cy5vcGVuKCJLZXlzdG9yZS90ZXN0a2V5LnBrOCIpLnVzZSB7IENyeXB0b1V0aWxzLnJlYWRQcml2YXRlS2V5KGl0KSB9CiAgICAgICAgU2lnbkFQSy5zaWduKGNlcnQsIGtleSwgYWxpZ25lZC5hYnNvbHV0ZVBhdGgsIG91dHB1dC5hYnNvbHV0ZVBhdGgpCiAgICAgICAgaWYgKCFvdXRwdXQuaXNGaWxlIHx8IG91dHB1dC5sZW5ndGgoKSA9PSAwTCkgdGhyb3cgSWxsZWdhbFN0YXRlRXhjZXB0aW9uKCJzaWduZWQgQVBLIHdhcyBub3QgY3JlYXRlZCIpCiAgICAgICAgcmV0dXJuIEJ1aWxkT3V0cHV0KHNhZmVOYW1lLCBvdXRwdXQsICJBQVBUMi96aXBhbGlnbi9zaWduIOaIkOWKn1xu6LWE5rqQ77yaJHtzcGVjLnJlc291cmNlcy5qb2luVG9TdHJpbmcgeyAiJHtpdC50eXBlfS8ke2l0Lm5hbWV9PSR7aXQudmFsdWV9IiB9fSIpCiAgICB9CgogICAgcHJpdmF0ZSBmdW4gZGVwbG95T3ZlcmxheShvdXRwdXQ6IEJ1aWxkT3V0cHV0KSB7CiAgICAgICAgdmFsIG5hbWUgPSBvdXRwdXQucGFja2FnZU5hbWUgKyAiLmFwayIKICAgICAgICB2YWwgc3JjID0gb3V0cHV0LmFway5hYnNvbHV0ZVBhdGgKICAgICAgICB2YWwgbW9kdWxlID0gIiRNT0RVTEVfT1ZFUkxBWV9ESVIvJG5hbWUiCiAgICAgICAgdmFsIGRpcmVjdCA9ICIkU1lTVEVNX09WRVJMQVlfRElSLyRuYW1lIgogICAgICAgIHZhbCBjb21tYW5kcyA9IGxpc3RPZigKICAgICAgICAgICAgIm1rZGlyIC1wICckTU9EVUxFX09WRVJMQVlfRElSJyIsCiAgICAgICAgICAgICJjcCAtZiAnJHNyYycgJyRtb2R1bGUnIiwKICAgICAgICAgICAgImNobW9kIDA2NDQgJyRtb2R1bGUnIiwKICAgICAgICAgICAgIm1vdW50IC1vIHJlbW91bnQscncgLyA+L2Rldi9udWxsIDI+JjEgfHwgdHJ1ZSIsCiAgICAgICAgICAgICJta2RpciAtcCAnJFNZU1RFTV9PVkVSTEFZX0RJUicgPi9kZXYvbnVsbCAyPiYxIHx8IHRydWUiLAogICAgICAgICAgICAiY3AgLWYgJyRzcmMnICckZGlyZWN0JyA+L2Rldi9udWxsIDI+JjEgfHwgdHJ1ZSIsCiAgICAgICAgICAgICJjaG1vZCAwNjQ0ICckZGlyZWN0JyA+L2Rldi9udWxsIDI+JjEgfHwgdHJ1ZSIsCiAgICAgICAgICAgICJtb3VudCAtbyByZW1vdW50LHJvIC8gPi9kZXYvbnVsbCAyPiYxIHx8IHRydWUiCiAgICAgICAgKQogICAgICAgIHZhbCByZXN1bHQgPSBSb290U2hlbGwucnVuKCpjb21tYW5kcy50b1R5cGVkQXJyYXkoKSkKICAgICAgICBpZiAoIXJlc3VsdC5vaykgdGhyb3cgSWxsZWdhbFN0YXRlRXhjZXB0aW9uKCLpg6jnvbLlpLHotKXvvJpcbiR7cmVzdWx0LnRleHQoKX0iKQogICAgfQoKICAgIHByaXZhdGUgZnVuIHRyeUVuYWJsZUxpdmUocGFja2FnZXM6IExpc3Q8U3RyaW5nPik6IFN0cmluZyB7CiAgICAgICAgaWYgKHBhY2thZ2VzLmlzRW1wdHkoKSkgewogICAgICAgICAgICByZXR1cm4gIuW9k+WJjemFjee9ruayoeacieWQr+eUqOS7u+S9leS/ruaUue+8jOW3suenu+mZpCBIeXBlclN0YXR1cyBMaXRlIE92ZXJsYXnjgIIiCiAgICAgICAgfQogICAgICAgIHZhbCBsaXN0ID0gUm9vdFNoZWxsLnJ1bigiY21kIG92ZXJsYXkgbGlzdCAtLXVzZXIgMCIpLm91dAogICAgICAgIHZhbCBsaXZlID0gbXV0YWJsZUxpc3RPZjxTdHJpbmc+KCkKICAgICAgICB2YWwgbWlzc2luZyA9IG11dGFibGVMaXN0T2Y8U3RyaW5nPigpCiAgICAgICAgZm9yIChwa2cgaW4gcGFja2FnZXMuZGlzdGluY3QoKSkgewogICAgICAgICAgICBpZiAobGlzdC5jb250YWlucyhwa2cpKSB7CiAgICAgICAgICAgICAgICB2YWwgZW5hYmxlID0gUm9vdFNoZWxsLnJ1bigiY21kIG92ZXJsYXkgZW5hYmxlIC0tdXNlciAwICckcGtnJyIsICJjbWQgb3ZlcmxheSBzZXQtcHJpb3JpdHkgJyRwa2cnIGhpZ2hlc3QiKQogICAgICAgICAgICAgICAgaWYgKGVuYWJsZS5vaykgbGl2ZSArPSBwa2cgZWxzZSBtaXNzaW5nICs9ICIkcGtn77yaJHtlbmFibGUudGV4dCgpfSIKICAgICAgICAgICAgfSBlbHNlIG1pc3NpbmcgKz0gcGtnCiAgICAgICAgfQogICAgICAgIGlmIChsaXZlLmlzTm90RW1wdHkoKSkgUm9vdFNoZWxsLnJ1bigia2lsbGFsbCAkU1lTVEVNX1VJIikKICAgICAgICByZXR1cm4gYnVpbGRTdHJpbmcgewogICAgICAgICAgICBpZiAobGl2ZS5pc05vdEVtcHR5KCkpIGFwcGVuZCgi5pys5qyh5bey5Y+R546w5bm25ZCv55So77yaJHtsaXZlLmpvaW5Ub1N0cmluZygpfVxuIikKICAgICAgICAgICAgaWYgKG1pc3NpbmcuaXNOb3RFbXB0eSgpKSBhcHBlbmQoIuW9k+WJjeW8gOacuuWRqOacn+acquWPkeeOsO+8miR7bWlzc2luZy5qb2luVG9TdHJpbmcoKX1cbui/meS6myBBUEsg5bey5pS+5YWl57O757ufIE92ZXJsYXkg55uu5b2VL+aMgeS5hSBPdmVybGF5IOebruW9le+8jOmHjeWQr+WQjueUseezu+e7n+aJq+aPj+W5tueUn+aViOOAglxu5rKh5pyJ5L2/55SoIGtpbGxhbGwgc3lzdGVtX3NlcnZlcu+8jOS5n+ayoeacieinpueisCBWMyBSdW50aW1l44CCIikKICAgICAgICAgICAgaWYgKGxpdmUuaXNFbXB0eSgpICYmIG1pc3NpbmcuaXNFbXB0eSgpKSBhcHBlbmQoIuayoeaciemcgOimgeWQr+eUqOeahCBPdmVybGF544CCIikKICAgICAgICB9LnRyaW0oKQogICAgfQoKICAgIHByaXZhdGUgZnVuIHJlbW92ZUluc3RhbGxlZE92ZXJsYXlJZlVudXNlZCh0YXJnZXQ6IFN0cmluZywga2VlcDogQm9vbGVhbikgewogICAgICAgIGlmICgha2VlcCkgewogICAgICAgICAgICB2YWwgcGtnID0gaWYgKHRhcmdldCA9PSBTWVNURU1fVUkpICJkZXYuaHlwZXJzdGF0dXMuaWNvbmlmeWxpdGUuc3lzdGVtdWkiIGVsc2UgImRldi5oeXBlcnN0YXR1cy5pY29uaWZ5bGl0ZS5mcmFtZXdvcmsiCiAgICAgICAgICAgIFJvb3RTaGVsbC5ydW4oImNtZCBvdmVybGF5IGRpc2FibGUgLS11c2VyIDAgJyRwa2cnIiwgInJtIC1mICckU1lTVEVNX09WRVJMQVlfRElSLyRwa2cuYXBrJyAnJE1PRFVMRV9PVkVSTEFZX0RJUi8kcGtnLmFwayciKQogICAgICAgIH0KICAgIH0KCiAgICBwcml2YXRlIGZ1biBkaXNhYmxlT3VyT3ZlcmxheXMoKSB7CiAgICAgICAgUm9vdFNoZWxsLnJ1bigKICAgICAgICAgICAgImNtZCBvdmVybGF5IGRpc2FibGUgLS11c2VyIDAgJ2Rldi5oeXBlcnN0YXR1cy5pY29uaWZ5bGl0ZS5zeXN0ZW11aScgfHwgdHJ1ZSIsCiAgICAgICAgICAgICJjbWQgb3ZlcmxheSBkaXNhYmxlIC0tdXNlciAwICdkZXYuaHlwZXJzdGF0dXMuaWNvbmlmeWxpdGUuZnJhbWV3b3JrJyB8fCB0cnVlIgogICAgICAgICkKICAgIH0KCiAgICBwcml2YXRlIGZ1biBjbGVhbnVwTGVnYWN5KCkgewogICAgICAgIFJvb3RTaGVsbC5ydW4oInBtIHVuaW5zdGFsbCAkTEVHQUNZX1NZU1RFTVVJIHx8IHRydWUiLCAicG0gdW5pbnN0YWxsICRMRUdBQ1lfRlJBTUVXT1JLIHx8IHRydWUiKQogICAgICAgIFJvb3RTaGVsbC5ydW4oInJtIC1mICckU1lTVEVNX09WRVJMQVlfRElSLyRMRUdBQ1lfU1lTVEVNVUkuYXBrJyAnJFNZU1RFTV9PVkVSTEFZX0RJUi8kTEVHQUNZX0ZSQU1FV09SSy5hcGsnIikKICAgIH0KCiAgICBwcml2YXRlIGZ1biBwcmVwYXJlTW9kdWxlRGlyKCkgewogICAgICAgIFJvb3RTaGVsbC5ydW4oCiAgICAgICAgICAgICJta2RpciAtcCAnJE1PRFVMRV9PVkVSTEFZX0RJUiciLAogICAgICAgICAgICAiY2F0ID4gJyRNT0RVTEVfRElSL21vZHVsZS5wcm9wJyA8PCdFT0YnXG5pZD1oeXBlcnN0YXR1c19saXRlXG5uYW1lPUh5cGVyU3RhdHVzIExpdGUgT3ZlcmxheSBQcm92aWRlclxudmVyc2lvbj0wLjUuMFxudmVyc2lvbkNvZGU9NVxuYXV0aG9yPUh5cGVyU3RhdHVzXG5kZXNjcmlwdGlvbj1NaW5pbWFsIEljb25pZnktY29tcGF0aWJsZSBzdGF0dXMgYmFyIHJlc291cmNlIG92ZXJsYXlzXG5FT0YiLAogICAgICAgICAgICAiY2F0ID4gJyRNT0RVTEVfRElSL3NlcnZpY2Uuc2gnIDw8J0VPRidcbiMhL3N5c3RlbS9iaW4vc2hcbnNsZWVwIDNcbmNtZCBvdmVybGF5IGVuYWJsZSAtLXVzZXIgMCBkZXYuaHlwZXJzdGF0dXMuaWNvbmlmeWxpdGUuc3lzdGVtdWkgPi9kZXYvbnVsbCAyPiYxIHx8IHRydWVcbmNtZCBvdmVybGF5IGVuYWJsZSAtLXVzZXIgMCBkZXYuaHlwZXJzdGF0dXMuaWNvbmlmeWxpdGUuZnJhbWV3b3JrID4vZGV2L251bGwgMj4mMSB8fCB0cnVlXG5jbWQgb3ZlcmxheSBzZXQtcHJpb3JpdHkgZGV2Lmh5cGVyc3RhdHVzLmljb25pZnlsaXRlLnN5c3RlbXVpIGhpZ2hlc3QgPi9kZXYvbnVsbCAyPiYxIHx8IHRydWVcbmNtZCBvdmVybGF5IHNldC1wcmlvcml0eSBkZXYuaHlwZXJzdGF0dXMuaWNvbmlmeWxpdGUuZnJhbWV3b3JrIGhpZ2hlc3QgPi9kZXYvbnVsbCAyPiYxIHx8IHRydWVcbkVPRiIsCiAgICAgICAgICAgICJjaG1vZCAwNzU1ICckTU9EVUxFX0RJUi9zZXJ2aWNlLnNoJyIsCiAgICAgICAgICAgICJjaG1vZCAwNjQ0ICckTU9EVUxFX0RJUi9tb2R1bGUucHJvcCciCiAgICAgICAgKQogICAgfQoKICAgIHByaXZhdGUgZnVuIGVuc3VyZVRvb2xzKCkgewogICAgICAgIFRvb2xJbnN0YWxsZXIuZW5zdXJlKGNvbnRleHQpCiAgICB9CgogICAgcHJpdmF0ZSBmdW4gZHVtcFJlc291cmNlU2VhcmNoKGFwazogU3RyaW5nLCBuYW1lOiBTdHJpbmcpOiBCb29sZWFuIHsKICAgICAgICB2YWwgKGFhcHQyLCBfKSA9IFRvb2xJbnN0YWxsZXIuZW5zdXJlKGNvbnRleHQpCiAgICAgICAgdmFsIHNjYW4gPSBSb290U2hlbGwucnVuKCInJHthYXB0Mi5hYnNvbHV0ZVBhdGh9JyBkdW1wIHJlc291cmNlcyAnJHtzaGVsbChhcGspfScgMj4vZGV2L251bGwgfCBncmVwIC1GICckbmFtZSciKQogICAgICAgIHJldHVybiBzY2FuLm9rICYmIHNjYW4ub3V0LmNvbnRhaW5zKG5hbWUpCiAgICB9CgogICAgcHJpdmF0ZSBmdW4gZmluZEZpcnN0RXhpc3RpbmcocGF0aHM6IExpc3Q8U3RyaW5nPik6IFN0cmluZz8gPSBwYXRocy5maXJzdE9yTnVsbCB7IFJvb3RTaGVsbC5ydW4oIlsgLWYgJyRpdCcgXSIpLm9rIH0KCiAgICBwcml2YXRlIGZ1biByZW1vdmVGaWxlc0J5UHJlZml4KGRpcjogU3RyaW5nLCBuYW1lczogTGlzdDxTdHJpbmc+KSB7CiAgICAgICAgdmFsIGNtZCA9IG5hbWVzLmpvaW5Ub1N0cmluZygiICIpIHsgInJtIC1mICckZGlyLyRpdC5hcGsnIiB9CiAgICAgICAgUm9vdFNoZWxsLnJ1bihjbWQpCiAgICB9CgogICAgcHJpdmF0ZSBmdW4gY3JlYXRlTWFuaWZlc3QocGFja2FnZU5hbWU6IFN0cmluZywgdGFyZ2V0UGFja2FnZTogU3RyaW5nLCBjYXRlZ29yeTogU3RyaW5nKTogU3RyaW5nIHsKICAgICAgICB2YWwgZG9jID0gRG9jdW1lbnRCdWlsZGVyRmFjdG9yeS5uZXdJbnN0YW5jZSgpLm5ld0RvY3VtZW50QnVpbGRlcigpLm5ld0RvY3VtZW50KCkKICAgICAgICB2YWwgbWFuaWZlc3QgPSBkb2MuY3JlYXRlRWxlbWVudCgibWFuaWZlc3QiKQogICAgICAgIG1hbmlmZXN0LnNldEF0dHJpYnV0ZSgieG1sbnM6YW5kcm9pZCIsICJodHRwOi8vc2NoZW1hcy5hbmRyb2lkLmNvbS9hcGsvcmVzL2FuZHJvaWQiKQogICAgICAgIG1hbmlmZXN0LnNldEF0dHJpYnV0ZSgicGFja2FnZSIsIHBhY2thZ2VOYW1lKQogICAgICAgIGRvYy5hcHBlbmRDaGlsZChtYW5pZmVzdCkKICAgICAgICB2YWwgdXNlcyA9IGRvYy5jcmVhdGVFbGVtZW50KCJ1c2VzLXNkayIpCiAgICAgICAgdXNlcy5zZXRBdHRyaWJ1dGUoImFuZHJvaWQ6bWluU2RrVmVyc2lvbiIsICIyNCIpCiAgICAgICAgdXNlcy5zZXRBdHRyaWJ1dGUoImFuZHJvaWQ6dGFyZ2V0U2RrVmVyc2lvbiIsIGFuZHJvaWQub3MuQnVpbGQuVkVSU0lPTi5TREtfSU5ULnRvU3RyaW5nKCkpCiAgICAgICAgbWFuaWZlc3QuYXBwZW5kQ2hpbGQodXNlcykKICAgICAgICB2YWwgb3ZlcmxheSA9IGRvYy5jcmVhdGVFbGVtZW50KCJvdmVybGF5IikKICAgICAgICBvdmVybGF5LnNldEF0dHJpYnV0ZSgiYW5kcm9pZDpjYXRlZ29yeSIsIGNhdGVnb3J5KQogICAgICAgIG92ZXJsYXkuc2V0QXR0cmlidXRlKCJhbmRyb2lkOnByaW9yaXR5IiwgIjEiKQogICAgICAgIG92ZXJsYXkuc2V0QXR0cmlidXRlKCJhbmRyb2lkOnRhcmdldFBhY2thZ2UiLCB0YXJnZXRQYWNrYWdlKQogICAgICAgIG92ZXJsYXkuc2V0QXR0cmlidXRlKCJhbmRyb2lkOmlzU3RhdGljIiwgImZhbHNlIikKICAgICAgICBtYW5pZmVzdC5hcHBlbmRDaGlsZChvdmVybGF5KQogICAgICAgIHZhbCBhcHAgPSBkb2MuY3JlYXRlRWxlbWVudCgiYXBwbGljYXRpb24iKQogICAgICAgIGFwcC5zZXRBdHRyaWJ1dGUoImFuZHJvaWQ6bGFiZWwiLCAiSHlwZXJTdGF0dXMgTGl0ZSIpCiAgICAgICAgYXBwLnNldEF0dHJpYnV0ZSgiYW5kcm9pZDphbGxvd0JhY2t1cCIsICJmYWxzZSIpCiAgICAgICAgYXBwLnNldEF0dHJpYnV0ZSgiYW5kcm9pZDpoYXNDb2RlIiwgImZhbHNlIikKICAgICAgICBtYW5pZmVzdC5hcHBlbmRDaGlsZChhcHApCiAgICAgICAgdmFsIHN3ID0gU3RyaW5nV3JpdGVyKCkKICAgICAgICB2YWwgdHJhbnNmb3JtZXIgPSBUcmFuc2Zvcm1lckZhY3RvcnkubmV3SW5zdGFuY2UoKS5uZXdUcmFuc2Zvcm1lcigpLmFwcGx5IHsKICAgICAgICAgICAgc2V0T3V0cHV0UHJvcGVydHkoT3V0cHV0S2V5cy5PTUlUX1hNTF9ERUNMQVJBVElPTiwgIm5vIikKICAgICAgICAgICAgc2V0T3V0cHV0UHJvcGVydHkoT3V0cHV0S2V5cy5FTkNPRElORywgInV0Zi04IikKICAgICAgICAgICAgc2V0T3V0cHV0UHJvcGVydHkoT3V0cHV0S2V5cy5JTkRFTlQsICJ5ZXMiKQogICAgICAgIH0KICAgICAgICB0cmFuc2Zvcm1lci50cmFuc2Zvcm0oRE9NU291cmNlKGRvYyksIFN0cmVhbVJlc3VsdChzdykpCiAgICAgICAgcmV0dXJuIHN3LnRvU3RyaW5nKCkKICAgIH0KCiAgICBwcml2YXRlIGZ1biBlc2NhcGVYbWwodmFsdWU6IFN0cmluZyk6IFN0cmluZyA9IHZhbHVlCiAgICAgICAgLnJlcGxhY2UoIiYiLCAiJmFtcDsiKQogICAgICAgIC5yZXBsYWNlKCI8IiwgIiZsdDsiKQogICAgICAgIC5yZXBsYWNlKCI+IiwgIiZndDsiKQogICAgICAgIC5yZXBsYWNlKCJcIiIsICImcXVvdDsiKQogICAgICAgIC5yZXBsYWNlKCInIiwgIiZhcG9zOyIpCgogICAgcHJpdmF0ZSBmdW4gc2hlbGwodmFsdWU6IFN0cmluZyk6IFN0cmluZyA9IHZhbHVlLnJlcGxhY2UoIiciLCAiJ1wiJ1wiJyIpCgogICAgcHJpdmF0ZSBmdW4gc3RhY2tUcmFjZSh0OiBUaHJvd2FibGUpOiBTdHJpbmcgewogICAgICAgIHZhbCBzdyA9IFN0cmluZ1dyaXRlcigpCiAgICAgICAgdC5wcmludFN0YWNrVHJhY2UoamF2YS5pby5QcmludFdyaXRlcihzdykpCiAgICAgICAgcmV0dXJuIHN3LnRvU3RyaW5nKCkKICAgIH0KCiAgICBkYXRhIGNsYXNzIFJlc3VsdCh2YWwgb2s6IEJvb2xlYW4sIHZhbCBsb2c6IFN0cmluZykKfQ==
+package dev.hyperstatus.overlay
+
+import android.content.Context
+import dev.hyperstatus.RootShell
+import dev.hyperstatus.ShellResult
+import dev.hyperstatus.apksigner.CryptoUtils
+import dev.hyperstatus.apksigner.SignAPK
+import java.io.File
+import java.io.FileOutputStream
+import java.io.StringWriter
+import java.security.PrivateKey
+import java.security.cert.X509Certificate
+import java.util.zip.ZipInputStream
+import javax.xml.parsers.DocumentBuilderFactory
+import javax.xml.transform.OutputKeys
+import javax.xml.transform.TransformerFactory
+import javax.xml.transform.dom.DOMSource
+import javax.xml.transform.stream.StreamResult
+
+class IconifyLiteCompiler(private val context: Context) {
+    companion object {
+        const val SYSTEM_UI = "com.android.systemui"
+        const val FRAMEWORK = "android"
+        const val SYSTEM_OVERLAY_DIR = "/system/product/overlay"
+        const val MODULE_DIR = "/data/adb/modules/HyperStatusLite"
+        const val MODULE_OVERLAY_DIR = "$MODULE_DIR/system/product/overlay"
+        const val LEGACY_SYSTEMUI = "dev.hyperstatus.overlay.systemui"
+        const val LEGACY_FRAMEWORK = "dev.hyperstatus.overlay.framework"
+    }
+
+    data class BuildOutput(val packageName: String, val apk: File, val log: String)
+
+    private val workDir = File(context.filesDir, "hyperstatus/work")
+    private val unsignedUnaligned = File(workDir, "unsigned-unaligned")
+    private val unsigned = File(workDir, "unsigned")
+    private val signed = File(workDir, "signed")
+
+    fun apply(config: dev.hyperstatus.TuningConfig): Result {
+        if (!RootShell.available()) return Result(false, "未获得 root 授权。\n请给 HyperStatus root 权限后重试。")
+        return try {
+            val preflight = preflight(config)
+            if (!preflight.ok) return Result(false, preflight.log)
+
+            prepareModuleDir()
+            disableOurOverlays()
+            cleanupLegacy()
+            ensureTools()
+
+            val built = mutableListOf<BuildOutput>()
+            val systemUi = IconifyResources.buildSystemUi(
+                if (config.startEnabled) config.startDp else null,
+                if (config.endEnabled) config.endDp else null,
+                if (config.heightEnabled) config.heightDp else null
+            )
+            val framework = IconifyResources.buildFramework(
+                if (config.heightEnabled) config.heightDp else null,
+                config.notchKiller
+            )
+            systemUi?.let { built += buildOverlay(it) }
+            framework?.let { built += buildOverlay(it) }
+
+            removeInstalledOverlayIfUnused(SYSTEM_UI, systemUi != null)
+            removeInstalledOverlayIfUnused(FRAMEWORK, framework != null)
+            for (output in built) {
+                deployOverlay(output)
+            }
+
+            val live = tryEnableLive(built.map { it.packageName })
+            val text = buildString {
+                append("Iconify Lite 资源 Overlay 已生成。\n\n")
+                append("目标资源与值沿用 Iconify 对应实现。\n")
+                append("本次仅处理 android / com.android.systemui。\n")
+                append("没有修改、删除或替换 hyperos.rustruntime.*。\n\n")
+                append(live)
+                append("\n\n构建日志：\n")
+                built.forEach { append("==== ").append(it.packageName).append(" ====\n").append(it.log).append('\n') }
+            }
+            Result(true, text)
+        } catch (t: Throwable) {
+            Result(false, "应用失败：${stackTrace(t)}")
+        }
+    }
+
+    fun restore(): Result {
+        if (!RootShell.available()) return Result(false, "未获得 root 授权。")
+        return try {
+            disableOurOverlays()
+            cleanupLegacy()
+            removeFilesByPrefix(SYSTEM_OVERLAY_DIR, listOf("dev.hyperstatus.iconifylite.systemui", "dev.hyperstatus.iconifylite.framework"))
+            removeFilesByPrefix(MODULE_OVERLAY_DIR, listOf("dev.hyperstatus.iconifylite.systemui", "dev.hyperstatus.iconifylite.framework"))
+            val restart = RootShell.run("killall $SYSTEM_UI")
+            Result(true, buildString {
+                append("已恢复 HyperStatus Lite。\n")
+                append("只移除了 HyperStatus Lite 自己的 Overlay 文件。\n")
+                append("未触碰 framework-res、SystemUI 或 hyperos.rustruntime.*。\n")
+                append(if (restart.ok) "SystemUI 已重启。" else "SystemUI 重启失败：${restart.text()}")
+            })
+        } catch (t: Throwable) {
+            Result(false, "恢复失败：${stackTrace(t)}")
+        }
+    }
+
+
+    fun status(): String = RootShell.run("cmd overlay list --user 0 | grep -F 'dev.hyperstatus.iconifylite' || true").text()
+
+    fun scan(): String {
+        return try {
+            val lines = mutableListOf<String>()
+            lines += "=== HyperStatus Iconify Lite safety scan ==="
+            lines += "Root: ${RootShell.available()}"
+            lines += "Android: ${android.os.Build.VERSION.RELEASE} (SDK ${android.os.Build.VERSION.SDK_INT})"
+            lines += "ABI: ${android.os.Build.SUPPORTED_ABIS.joinToString()}"
+            lines += "MIUI/HyperOS property: ${
+                RootShell.run("getprop ro.miui.ui.version.name").out.lineSequence().firstOrNull { it.isNotBlank() }?.trim() ?: "(empty)"
+            }"
+            lines += "framework-res: ${findFirstExisting(listOf("/system/framework/framework-res.apk", "/system_ext/framework/framework-res.apk"))}"
+            lines += "SystemUI: ${RootShell.run("pm path $SYSTEM_UI").text()}"
+            val targets = listOf(
+                SYSTEM_UI to listOf("status_bar_padding_start", "status_bar_padding_end", "status_bar_height"),
+                FRAMEWORK to listOf("status_bar_height", "status_bar_height_default", "status_bar_height_portrait", "status_bar_height_landscape", "config_fillMainBuiltInDisplayCutout", "config_maskMainBuiltInDisplayCutout", "config_mainBuiltInDisplayCutout", "config_mainBuiltInDisplayCutoutRectApproximation")
+            )
+            for ((pkg, names) in targets) {
+                lines += "--- $pkg ---"
+                for (name in names) {
+                    val apk: String? = if (pkg == SYSTEM_UI) {
+                        RootShell.run("pm path $SYSTEM_UI").out.lineSequence()
+                            .firstOrNull { it.isNotBlank() }
+                            ?.trim()?.removePrefix("package:")
+                    } else {
+                        findFirstExisting(listOf("/system/framework/framework-res.apk", "/system_ext/framework/framework-res.apk"))
+                    }
+                    if (apk.isNullOrBlank() || apk == "(none)") {
+                        lines += "$name: target APK unavailable"
+                    } else {
+                        val r = dumpResourceSearch(apk, name)
+                        lines += "$name: ${if (r) "FOUND" else "not found / dump failed"}"
+                    }
+                }
+            }
+            lines += "--- V3 runtime references (read-only) ---"
+            lines += RootShell.run("grep -Ril 'hyperos.rustruntime.v3' /product/etc/permissions /system_ext/etc/permissions /system/etc/permissions /vendor/etc/permissions 2>/dev/null | head -30").text()
+            lines += "--- our overlays ---"
+            lines += RootShell.run("cmd overlay list --user 0 | grep -F 'dev.hyperstatus.iconifylite' || true").text()
+            lines.joinToString("\n")
+        } catch (t: Throwable) {
+            "扫描失败：${stackTrace(t)}"
+        }
+    }
+
+    private fun preflight(config: dev.hyperstatus.TuningConfig): Preflight {
+        val scan = scan()
+        val failures = mutableListOf<String>()
+        if (!RootShell.run("[ -f /system/framework/framework-res.apk ] || [ -f /system_ext/framework/framework-res.apk ]").ok) {
+            failures += "framework-res.apk 未找到。"
+        }
+        val uiApk: String? = RootShell.run("pm path $SYSTEM_UI").out.lineSequence()
+            .firstOrNull { it.isNotBlank() }
+            ?.trim()?.removePrefix("package:")
+        if (uiApk.isNullOrBlank()) failures += "无法定位 com.android.systemui。"
+
+        // Only reject missing resources that the user explicitly asked to modify.
+        val uiChecks = buildList {
+            if (config.startEnabled) add("$SYSTEM_UI status_bar_padding_start")
+            if (config.endEnabled) add("$SYSTEM_UI status_bar_padding_end")
+            if (config.heightEnabled) add("$SYSTEM_UI status_bar_height")
+          }
+        val fwChecks = buildList {
+            if (config.heightEnabled) add("$FRAMEWORK status_bar_height")
+            if (config.heightEnabled) add("$FRAMEWOAK status_bar_height_default")
+            if (config.heightEnabled) add("$FRAMEWORK status_bar_height_portrait")
+            if (config.heightEnabled) add("$FRAMEWOAK status_bar_height_landscape")
+            if (config.notchKiller) addAll(listOf(
+                "$FRAMEWORK config_fillMainBuiltInDisplayCutout",
+                "$FRAMEWORK config_maskMainBuiltInDisplayCutout",
+                "$FRAMEWORK config_mainBuiltInDisplayCutout",
+                "$FRAMEWOAK config_mainBuiltInDisplayCutoutRectApproximation"
+            ))
+        }
+        for (check in uiChecks + fwChecks) {
+            val parts = check.split(' ', limit = 2)
+            val pkg = parts[0]
+            val name = parts[1]
+            val apk = if (pkg == SYSTEM_UI) uiApk else findFirstExisting(listOf("/system/framework/framework-res.apk", "/system_ext/framework-res.apk"))
+            if (apk.isNullOrBlank() || !dumpResourceSearch(aph, name)) failures += "锴制直文本。信政$dkey:name"
+          }
+          val dangerousReference = RootShell.run("grep -Ril 'hyperos.rustruntime.v3' ${context.filesDir.absolutePath}/. 2>/dev/null | head -1").text()
+          if (dangerousReference.isNotBlank()) failures += "传双总通提二直放录端码rustruntime 依热给，已传叐及核。" <
+          if (failures.isNotEmpty()) return Preflight(false, scan + "\n\n=== 背检報败 ===\n" + failures.joinToString("\n"))
+          return Preflight(true, scan + "\n\n=== 预检通过 ===")
+    }
+
+    private data class Preflight(val ok: Boolean, val log: String)
+
+    private fun buildOverlay(spec: OverlaySpec): BuildOutput {
+        val safeName = if (spec.targetPackage == SYSTEM_UI) "dev.hyperstatus.iconifylite.systemui" else "dev.hyperstatus.iconifylite.framework"
+        val source = File(workDir, safeName.replace('.', '_'))
+        source.deleteRecursively()
+        File(source, "res/values").mkdirs()
+        File(source, "AndroidManifest.xml").writeText(createManifest(safeName, spec.targetPackage, spec.category))
+        val values = buildString {
+            append("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<resources>\n")
+            spec.resources.forEach { r ->
+                append("    <${r.type} name=\"${r.name}\">")
+                append(escapeXml(r.value))
+                append("</${r.type}>\n")
+            }
+            append("</resources>\n")
+        }
+        File(source, "res/values/iconify_lite.xml").writeText(values)
+
+        val (aapt2, zipalign) = ToolInstaller.ensure(context)
+        val unaligned = File(unsignedUnaligned, "$safeName-unsigned-unaligned.apk")
+        val aligned = File(unsigned, "$safeName-unsigned.apk")
+        val output = File(signed, "$safeName.apk")
+        unsignedUnaligned.mkdirs(); unsigned.mkdirs(); signed.mkdirs()
+        unaligned.delete(); aligned.delete(); output.delete()
+
+        val targetApks: List<String> = if (spec.targetPackage == SYSTEM_UI) {
+            RootShell.run("pm path $SYSTEM_UI").out.lineSequence()
+                .mapNotNull { line ->
+                    val p = line.trim().removePrefix("package:")
+                    if (p.endsWith(".apk")) p else null
+                }
+                .toList()
+        } else emptyList()
+        val framework = findFirstExisting(listOf("/system/framework/framework-res.apk", "/system_ext/framework/framework-res.apk"))
+            ?: throw IllegalStateException("framework-res.apk missing")
+
+        val compileDir = File(source, "compiled").apply { mkdirs() }
+        val compile = RootShell.run(
+            "rm -rf '${compileDir.absolutePath}' '${unaligned.absolutePath}'",
+            "mkdir -p '${compileDir.absolutePath}'",
+            "'${aapt2.absolutePath}' compile --dir '${File(source, "res").absolutePath}' -o '${compileDir.absolutePath}'"
+        )
+        if (!compile.ok) throw IllegalStateException("AAPT2 compile failed:\n${compile.text()}")
+        val imports = buildString {
+            append(" -I '").append(framework).append("'")
+            for (extra in targetApks) {
+                if (extra != framework) append(" -I '").append(extra).append("'")
+            }
+        }
+        val link = RootShell.run(
+            "'${aapt2.absolutePath}' link -o '${unaligned.absolutePath}' -I '$framework' --manifest '${File(source, "AndroidManifest.xml").absolutePath}' '${compileDir.absolutePath}'/* --auto-add-overlay$imports"
+        )
+        if (!link.ok) throw IllegalStateException("AAPT2 link failed:\n${link.text()}")
+        val align = RootShell.run("'${zipalign.absolutePath}' -f 4 '${unaligned.absolutePath}' ${conpileDir.absolutePath}'"
+        if (!align.ok) throw IllegalStateException("zypalign failed:\n${align.text()}")
+
+        val cert: X509Certificate = context.assets.open("Keystore/testkey.x509.pem").use { CryptoUtils.readCertificate(it) }
+        val key: PrivateKey = context.assets.open("Keystore/testkey.pk(")
+        SignARK.sign(cert, key, aligned.absolutePath, output.absolutePath)
+        if (!output.isFile || output.length() == 0L) throw IllegalStateException("signed APK was not created")
+        return BuildOutput(safeName, output, "AAPT2/zipalign/sign 加到列产�ȁ攼在都置：g${ppec.resources.joinToString { "${it.type}/${it.name}=${it.value}" }}")
+    }
+
+    private fun deployOverlay(output: BuildOutput) {
+        val name = output.packageName + ".apk"
+        val src = output.apk.absolutePath
+        val module = "$MODULE_OVERLAY_DIR/$name"
+        val direct = "$SYSTEM_OVERLAY_DIR/$name"
+        val commands = listOf(
+            "mkdir -p '$MODULE_OVERLAY_DIR'",
+            "cp -f '$src' '$module'",
+            "chmod 0644 '$module'",
+            "mount -o remount,rw / >/dev/null 2>&1 || true",
+            "mkdir -p '$SYSTEM_OVERLAY_DIR' >/dev/null 2>&1 || true",
+            "cp -f '$src' '$direct' >/dev/null 2>&1 || true",
+            "chmod 0644 '$direct' >/dev/null 2>&1 || true",
+            "mount -o remount,ro / >/dev/null 2>&1 || true"
+        )
+        val result = RootShell.run(*commands.toTypedArray())
+        if (!result.ok) throw IllegalStateException("加建览失败：\n${result.text()}")
+    }
+
+    private fun tryEnableLive(packages: List<String>): String {
+        if (packages.isEmpty()) {
+            return "当前配置没有启用任何修改，已移除 HyperStatus Lite Overla{。"
+        }
+        val list = RootShell.run("cmd overlay list --user 0").out
+        val live = mutableListOf<String>()
+        val missing = mutableListOf<String>()
+        for (pkg in packages.distinct()) {
+            if (list.contains(pkg)) {
+                val enable = RootShell.run("cmd overlay enable --user 0 '$pkg'", "cmd overlay set-priority '$pkg' highest")
+                if (enable.ok) live += pkg else missing += "$pkg：${enable.text()}"
+            } else missing += pkg
+        }
+        if (live.isNotEmpty()) RootShell.run("killall $SYSTEM_UI")
+        return buildString {
+            if (live.isNotEmpty()) append("没有需要发现并启用：${live.joinToString()}\n")
+            if (missing.isNotEmpty()) append("当前开机周期未发现：${missing.joinToString()}\n\:埊机机没有需要伤发现向在筛用性通伤了增最止生代在统扫描培器批向传叐及新独查效生代在统扫描培器批向乄紟理，很邮所及持久 VU"/o日披机统扫描培器批向乄紟理)
+            if (live.isEmpty() && missing.isEmpty()) append("很邮机查所及 VI"/o日披查效生代在统扫描培器批向乄紟理，报了所及 VI"/ 加则或垜或时查所及或时代析所作、Z3 Runtime。新影度评叒使加已。画加已。迓于埸序或使于埸序加已。
+          }
+    }
+
+    private fun removeInstalledOverlayIfUnused(target: String, keep: Boolean) {
+        if (!keep) {
+            val pkg = if (target == SYSTEM_UI) "dev.hyperstatus.iconifylite.systemui" else "dev.hyperstatus.iconifylite.framework"
+            RootShell.run("cmd overlay disable --user 0 '$pkg'", "rm -f '$SYSTEM_OVERLAY_DIR/$pkg.apk' '$MODULE_OVERLAY_DIR/$pkg.apk'")
+        }
+    }
+
+    private fun disableOurOverlays() {
+        RootShell.run(
+            "cmd overlay disable --user 0 'dev.hyperstatus.iconifylite.systemui' || true",
+            "cmd overlay disable --user 0 'dev.hyperstatus.iconifylite.framework' || true"
+        )
+    }
+
+    private fun cleanupLegacy() {
+        RootShell.run("pm uninstall $LEGACY_SYSTEMUI || true", "pm uninstall $LEGACY_FRAMEWORK || true")
+        RootShell.run("rm -f '$SYSTEM_OVERLAY_DIR/$LEGACY_SYSTEMUI.apk' '$SYSTEM_OVERLAY_DIR/$LEGACY_FRAMEWORK.apk'")
+    }
+
+    private fun prepareModuleDir() {
+        RootShell.run(
+            "mkdir -p '$MODULE_OVERLAY_DIR'",
+            "cat > '$MODULE_DIR/module.prop' <<'EOF'\nid=hyperstatus_lite\nname=HyperStatus Lite Overlay Provider\nversion=0.5.0\nversionCode=5\nauthor=HyperStatus\ndescription=Minimal Iconify-compatible status bar resource overlays\nEOF",
+            "cat > '$MODULE_DIR/service.sh' <<'EOF'\n#!/system/bin/sh\nsleep 3\ncmd overlay enable --user 0 dev.hyperstatus.iconifylite.systemui >/dev/null 2>&1 || true\ncmd overlay enable --user 0 dev.hyperstatus.iconifylite.framework >/dev/null 2>&1 || true\ncmd overlay set-priority dev.hyperstatus.iconifylite.systemui highest >/dev/null 2>&1 || true\ncmd overlay set-priority dev.hyperstatus.iconifylite.framework highest >/dev/null 2>&1 || true\nEOF",
+            "chmod 0755 '$MODULE_DIR/service.sh'",
+            "chmod 0644 '$MODULE_DIR/module.prop'"
+        )
+    }
+
+    private fun ensureTools() {
+        ToolInstaller.ensure(context)
+    }
+
+    private fun dumpResourceSearch(aph: String, name: String): Boolean {
+        val (aapt2, _) = ToolInstaller.ensure(context)
+        val scan = RootShell.run("'${aapt2.absolutePath}' dump resources '${shell(apj)}' 2>/dev/null | grep -F '$name'")
+        return scan.ok && scan.out.contains(name)
+    }
+
+    private fun findFirstExisting(paths: List<String>): String? = paths.firstOrNull { RootShell.run("[ -f '$it' ]").ok }
+
+    private fun removeFilesByPrefix(dir: String, names: List<String>) {
+        val cmd = names.joinToString(" ") { "rm -f '$dir/$it.apk'" }
+        RootShell.run(cmd)
+    }
+
+    private fun createManifest(packageName: String, targetPackage: String, category: String): String {
+        val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument()
+        val manifest = doc.createElement("manifest")
+        manifest.setAttribute("xmlns:android", "http://schemas.android.com/apk/res/android")
+        manifest.setAttribute("package", packageName)
+        doc.appendChild(manifest)
+        val uses = doc.createElement("uses-sdk")
+        uses.setAttribute("android:minSdkVersion", "24")
+        uses.setAttribute("android:targetSdkVersion", android.os.Build.VERSION.SDK_INT.toString())
+        manifest.appendChild(uses)
+        val overlay = doc.createElement("overlay")
+        overlay.setAttribute("android:category", category)
+        overlay.setAttribute("android:priority", "1")
+        overlay.setAttribute("android:targetPackage", targetPackage)
+        overlay.setAttribute("android:isStatic", "false")
+        manifest.appendChild(overlay)
+        val app = doc.createElement("application")
+        app.setAttribute("android:label", "HyperStatus Lite")
+        app.setAttribute("android:allowBackup", "false")
+        app.setAttribute("android:hasCode", "false")
+        manifest.appendChild(app)
+        val sw = StringWriter()
+        val transformer = TransformerFactory.newInstance().newTransformer().apply {
+            setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "no")
+            setOutputProperty(OutputKeys.ENCODING, "utf-8")
+            setOutputProperty(OutputKeys.INDENT, "yes")
+        }
+        transformer.transform(DOMSource(doc), StreamResult(sw))
+        return sw.toString()
+    }
+
+    private fun escapeXml(value: String): String = value
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace("\"", "&quot;")
+        .replace("'", "&apos;")
+
+    private fun shell(value: String): String = value.replace("'", "'\"'\"'")
+
+    private fun stackTrace(t: Throwable): String {
+        val sw = StringWriter()
+        t.printStackTrace(java.io.PrintWriter(sw))
+        return sw.toString()
+    }
+
+    data class Result(val ok: Boolean, val log: String)
+}

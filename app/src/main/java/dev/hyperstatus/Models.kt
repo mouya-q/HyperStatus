@@ -1,21 +1,5 @@
 package dev.hyperstatus
 
-data class ScanResult(
-    val root: Boolean,
-    val sdk: Int,
-    val release: String,
-    val miuiVersion: String,
-    val frameworkRes: String?,
-    val systemUiApks: List<String>,
-    val systemUiResources: Set<String>,
-    val frameworkResources: Set<String>,
-    val overlayableSystemUi: String,
-    val overlayableFramework: String,
-    val rustruntimeRefs: List<String>,
-    val ourOverlays: String,
-    val raw: String,
-)
-
 data class TuningConfig(
     val notchKiller: Boolean,
     val heightEnabled: Boolean,
@@ -25,3 +9,14 @@ data class TuningConfig(
     val endEnabled: Boolean,
     val endDp: Int,
 )
+
+data class ShellResult(val code: Int, val out: String, val err: String) {
+    val ok: Boolean get() = code == 0
+    fun text(): String = buildString {
+        if (out.isNotBlank()) append(out.trim())
+        if (err.isNotBlank()) {
+            if (isNotEmpty()) append('\n')
+            append(err.trim())
+        }
+    }.ifBlank { "(无命令输出)" }
+}

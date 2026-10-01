@@ -1,6 +1,6 @@
 # HyperStatus 0.3.0
 
-一个针对小米 10 / HyperOS 4 移植环境的极简状态栏调校工具：独立 APK + Root，不依赖 LSPosed/Xposed。
+一个针对 HyperOS 4 环境的极简状态栏调校工具：独立 APK + Root。
 
 ## 当前功能
 
@@ -43,14 +43,8 @@
 
 本版本不再从 `assets/Tools/...` 读取 AAPT2，而是把 arm64-v8a AAPT2 放入 `res/raw/aapt2_arm64_v8a`，运行时通过 Android Resources API 提取，然后复制到 root 临时目录并 `chmod 755`。
 
-设备 ABI 会在运行时检查。当前内置版本仅针对 `arm64-v8a`，适合小米 10。
+设备 ABI 会在运行时检查。当前内置版本仅针对 `arm64-v8a`。
 
-## GitHub Actions
-
-Workflow 会显式安装 Gradle 9.7.1、使用 JDK 21，并执行：
-
-```text
-gradle assembleDebug --stacktrace --no-daemon
 ```
 
 构建产物：`HyperStatus-debug-v0.3.0`

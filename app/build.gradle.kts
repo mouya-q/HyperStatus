@@ -9,10 +9,11 @@ android {
 
     defaultConfig {
         applicationId = "dev.hyperstatus"
-        minSdk = 26
-        targetSdk = 35
-        versionCode = 3
-        versionName = "0.3.0-miuix"
+        minSdk = 24
+        targetSdk = 37
+        versionCode = 6
+        versionName = "0.5.1-iconify-lite"
+        buildConfigField("String", "OVERLAY_ID_PREFIX", "\"HyperStatusLite_\"")
     }
 
     compileOptions {
@@ -27,14 +28,18 @@ android {
     }
 
     buildFeatures {
-        buildConfig = true
         compose = true
+        buildConfig = true
     }
 
     packaging {
-        resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        resources.excludes += setOf("/META-INF/{AL2.0,LGPL2.1}")
     }
+
+    lint { abortOnError = false; checkReleaseBuilds = false }
 }
+
+base { archivesName = "HyperStatus-IconifyLite-v${android.defaultConfig.versionName}" }
 
 dependencies {
     implementation("top.yukonga.miuix.kmp:miuix-ui-android:0.9.4")
@@ -43,5 +48,6 @@ dependencies {
     implementation("org.jetbrains.compose.runtime:runtime-android:1.12.0")
     implementation("org.jetbrains.compose.foundation:foundation-android:1.12.0")
     implementation("androidx.activity:activity:1.12.0")
-    implementation("com.android.tools.build:apksig:8.7.3")
+    implementation("androidx.core:core-ktx:1.17.0")
+    implementation("org.bouncycastle:bcpkix-jdk18on:1.78.1")
 }

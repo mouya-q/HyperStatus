@@ -3,7 +3,6 @@ package dev.hyperstatus
 import android.content.Context
 import com.android.apksig.ApkSigner
 import java.io.File
-import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.security.KeyFactory
 import java.security.PrivateKey
@@ -59,7 +58,9 @@ object OverlayEngine {
             RootShell.run("am force-stop $SYSTEM_UI >/dev/null 2>&1 || true")
             Result(true, "已应用。仅启用 HyperStatus 自己的 Overlay；SystemUI 已重启。顶部 Cutout 首次修改如仍无变化，再重启一次手机。")
         } catch (e: Exception) {
-            Result(false, "应用失败：${e.javaClass.simpleName}: ${e.message}")
+            val sw = java.io.StringWriter()
+            e.printStackTrace(java.io.PrintWriter(sw))
+            Result(false, "应用失败：${e.javaClass.name}: ${e.message}\n\n${sw}")
         }
     }
 
@@ -78,8 +79,7 @@ object OverlayEngine {
     private data class Spec(
         val packageName: String,
         val target: String,
-        val entries: List<Pair<String, String>>,
-        val needsLandscape: Boolean = false,
+        val entries: List<Pair<String, String>>
     )
 
     private data class Built(
@@ -117,11 +117,21 @@ object OverlayEngine {
     }
 
     fun ensureAapt2(context: Context) {
-        val local = File(context.filesDir, "aapt2")
-        if (!local.exists()) {
-            context.assets.open("Tools/aapt2-arm64-v8a").use { input -> FileOutputStream(local).use { input.copyTo(it) } }
+        val local = File(context.filesDir, "aapt2-arm64-v8a")
+        if (!local.exists() || local.length() < 1024 * 1024) {
+            context.resources.openRawResource(R.raw.aapt2_arm64_v8a).use { input ->
+                FileOutputStream(local).use { output -> input.copyTo(output) }
+            }
         }
-        RootShell.run("mkdir -p '$WORK'; cp '${local.absolutePath}' '$AAPT2_REMOTE'; chmod 755 '$AAPT2_REMOTE'")
+        if (!local.canRead() || local.length() < 1024 * 1024) {
+            throw IllegalStateException("AAPT2 内置文件无效或未正确打包")
+        }
+        val abi = android.os.Build.SUPPORTED_ABIS.firstOrNull().orEmpty()
+        if (abi != "arm64-v8a") {
+            throw IllegalStateException("当前设备 ABI=$abi；本版本内置 AAPT2 仅支持 arm64-v8a")
+        }
+        val copy = RootShell.run("mkdir -p '$WORK'; cp '${local.absolutePath}' '$AAPT2_REMOTE'; chmod 755 '$AAPT2_REMOTE'; file '$AAPT2_REMOTE' 2>/dev/null || true")
+        if (!copy.ok) throw IllegalStateException("无法准备 Root AAPT2：\n${copy.out}")
     }
 
     private fun compileOverlay(context: Context, work: File, spec: Spec): Built {
@@ -161,7 +171,7 @@ object OverlayEngine {
             if (target.isNotBlank()) for (p in target.split(Regex("\\s+"))) append(" -I '$p'")
         }
         val targetApks = if (spec.target == SYSTEM_UI) target.split(Regex("\\s+")).filter { it.isNotBlank() } else listOf(framework)
-        val missing = spec.entries.filterNot { e -> entryExists(targetApks, entry = entryName(e.first)) }
+        val missing = spec.entries.filterNot { entryExists(targetApks, entry = entryName(entry.first)) }
         if (missing.isNotEmpty()) {
             return Built(false, "ROM 未提供这些资源，已阻止修改：\n" + missing.joinToString("\n") { "- ${it.first}" }, null, spec.packageName)
         }

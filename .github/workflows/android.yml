@@ -1,9 +1,12 @@
-name: Android CI
+name: Build HyperStatus
+
 on:
   push:
   workflow_dispatch:
+
 permissions:
   contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,13 +15,13 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: '21'
       - uses: gradle/actions/setup-gradle@v4
-      - uses: gradle/gradle-build-action@v3
         with:
-          gradle-version: '8.9'
-      - run: gradle assembleDebug
+          gradle-version: '9.7.1'
+      - run: gradle --version
+      - run: gradle assembleDebug --stacktrace --no-daemon
       - uses: actions/upload-artifact@v4
         with:
-          name: HyperStatus-debug
+          name: HyperStatus-debug-v0.3.0
           path: app/build/outputs/apk/debug/app-debug.apk
